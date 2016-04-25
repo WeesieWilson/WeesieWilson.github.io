@@ -1,3 +1,21 @@
-<h1>Hello World</h1>
-<a href="/jeopardy"><button>Jeopardy</button></a>
-<a href="/barbara-liskov"><button>Must Reads</button></a>
+
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
+  </head>
+
+
+  <body ng-app='portfolio'>
+
+    <div class="main-container">
+      <ng-view></ng-view>
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.js" charset="utf-8"></script>
+    <script src="bundle.js" charset="utf-8"></script>
+  </body>
+</html>
