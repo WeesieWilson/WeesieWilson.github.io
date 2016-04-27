@@ -7,17 +7,22 @@
   overflow: auto;
   width: 100%;
   height: 735px;
+  margin-top: -2%;
+  aside{
+        height: 87%;
+  }
 }
 .about-wrapper{
-      width: 93%;
-      resize: both;
-      overflow: auto;
-      height: 88%;
-      overflow: hidden;
+  width: 96%;
+resize: both;
+overflow: auto;
+height: 94%;
+overflow: hidden;
   nav{
       display: flex;
       justify-content: space-between;
       margin-top: 1%;
+          margin-left: 4%;
       .logo{
           align-self: center;
         }
@@ -29,12 +34,12 @@
   height: 95%;
   width: 100%;
   background-size: cover;
-  &:before {
-    height: 78.5%;
-    width: 952px;
-    content: '';
-    position: absolute;
-    background-image: url("../../images/texture.png");
-    opacity: .9;
-    }
+  // &:before {
+  //   height: 78.5%;
+  //   width: 952px;
+  //   content: '';
+  //   position: absolute;
+  //   background-image: url("../../images/texture.png");
+  //   opacity: .9;
+  //   }
 }

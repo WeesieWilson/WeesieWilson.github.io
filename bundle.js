@@ -11,7 +11,126 @@ angular
     'portfolioHome'
   ])
 
-},{"./portfolioHome":6,"angular":5,"angular-route":3}],2:[function(require,module,exports){
+},{"./portfolioHome":7,"angular":6,"angular-route":4}],2:[function(require,module,exports){
+;(function() {
+  'use strict';
+
+  angular
+    .module('fullPage.js', [])
+    .directive('fullPage', fullPage);
+
+  fullPage.$inject = ['$timeout'];
+
+  function fullPage($timeout) {
+    var directive = {
+      restrict: 'A',
+      scope: {options: '='},
+      link: link
+    };
+
+    return directive;
+
+    function link(scope, element) {
+      var pageIndex;
+      var slideIndex;
+      var afterRender;
+
+      var rebuild = function() {
+        destroyFullPage();
+
+        angular.element(element).fullpage(sanatizeOptions(scope.options));
+
+        if (typeof afterRender === 'function') {
+          afterRender();
+        }
+      };
+
+      var destroyFullPage = function() {
+        if ($.fn.fullpage.destroy) {
+          $.fn.fullpage.destroy('all');
+        }
+      };
+
+      var sanatizeOptions = function(options) {
+        var onLeave;
+        var onSlideLeave;
+
+        if (typeof options === 'object') {
+          if (options.afterRender) {
+            afterRender = options.afterRender;
+          }
+
+          if (options.onLeave) {
+            onLeave = options.onLeave;
+          }
+
+          if (options.onSlideLeave) {
+            onSlideLeave = options.onSlideLeave;
+          }
+        } else if(typeof options === 'undefined') {
+          options = {};
+        }
+
+        options.afterRender = afterAngularRender;
+        options.onLeave = onAngularLeave;
+        options.onSlideLeave = onAngularSlideLeave;
+
+        function afterAngularRender() {
+          //We want to remove the HREF targets for navigation because they use hashbang
+          //They still work without the hash though, so its all good.
+          if (options && options.navigation) {
+            $('#fp-nav').find('a').removeAttr('href');
+          }
+
+          if (pageIndex) {
+            $timeout(function() {
+              $.fn.fullpage.silentMoveTo(pageIndex, slideIndex);
+            });
+          }
+        }
+
+        function onAngularLeave(page, next){
+          pageIndex = next;
+
+          if (typeof onLeave === 'function') {
+            onLeave();
+          }
+        }
+
+        function onAngularSlideLeave(anchorLink, page, slide, direction, next) {
+          pageIndex   = page;
+          slideIndex  = next;
+
+          if (typeof onSlideLeave === 'function') {
+            onSlideLeave();
+          }
+        }
+
+        //options.afterRender = afterAngularRender;
+
+        //if we are using a ui-router, we need to be able to handle anchor clicks without 'href="#thing"'
+        $(document).on('click', '[data-menuanchor]', function () {
+          $.fn.fullpage.moveTo($(this).attr('data-menuanchor'));
+        });
+
+        return options;
+      };
+
+      var watchNodes = function() {
+        return element[0].getElementsByTagName('*').length;
+      };
+
+      scope.$watch(watchNodes, rebuild);
+
+      scope.$watch('options', rebuild, true);
+
+      element.on('$destroy', destroyFullPage);
+    }
+  }
+
+})();
+
+},{}],3:[function(require,module,exports){
 /**
  * @license AngularJS v1.5.5
  * (c) 2010-2016 Google, Inc. http://angularjs.org
@@ -1038,11 +1157,11 @@ function ngViewFillContentFactory($compile, $controller, $route) {
 
 })(window, window.angular);
 
-},{}],3:[function(require,module,exports){
+},{}],4:[function(require,module,exports){
 require('./angular-route');
 module.exports = 'ngRoute';
 
-},{"./angular-route":2}],4:[function(require,module,exports){
+},{"./angular-route":3}],5:[function(require,module,exports){
 /**
  * @license AngularJS v1.5.5
  * (c) 2010-2016 Google, Inc. http://angularjs.org
@@ -31911,48 +32030,42 @@ $provide.value("$locale", {
 })(window);
 
 !window.angular.$$csp().noInlineStyle && window.angular.element(document.head).prepend('<style type="text/css">@charset "UTF-8";[ng\\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>');
-},{}],5:[function(require,module,exports){
+},{}],6:[function(require,module,exports){
 require('./angular');
 module.exports = angular;
 
-},{"./angular":4}],6:[function(require,module,exports){
+},{"./angular":5}],7:[function(require,module,exports){
 require('./portfolio.module');
 require('./portfoiliohome.controller')
 
-},{"./portfoiliohome.controller":7,"./portfolio.module":8}],7:[function(require,module,exports){
+},{"./portfoiliohome.controller":8,"./portfolio.module":9}],8:[function(require,module,exports){
 angular
 .module('portfolioHome')
-.controller('PortfolioCtrl', function ($rootScope,$scope) {
-  $(document).ready(function(){
+.controller('PortfolioCtrl', function ($rootScope,$scope,$location, $anchorScroll) {
+
+
+//   $scope.scrollTo = function(id) {
+//    $location.hash(id);
+//    $anchorScroll();
+// };
 
 
 // SIDEBAR SLIDER
 
-    var slide = $(".slide");
+    var slide = $(".sliding");
     $(slide).animate({marginLeft: "-1000px"});
     $(".button").on("click", function(){
   		if($(slide).css("marginLeft") === "-1000px"){
   			$(slide).animate({marginLeft: "400px"});
-        $('.button').css('position', 'absolute').css('top','50%').css('left','960px');
-  		}else if($(".slide").css("marginLeft") === "400px"){
+        $('.button').css('position', 'absolute').css('top','50%').css('left','981px');
+  		}else if($(".sliding").css("marginLeft") === "400px"){
   			$(slide).animate({marginLeft: "-1000px"});
-        $('.button').css('position', 'absolute').css('top','50%').css('left','569px');
+        $('.button').css('position', 'absolute').css('top','50%').css('left','577px');
 
   		}
   	});
 
-
-
-    // $('[href^="#"]').off().on('click', function (e) {
-    //     if ($(this).attr('href') != '#') {
-    //         e.preventDefault();
-    //         $('body').animate({scrollTop: $($(this).attr('href')).offset().top}, 500);
-    //     }
-    // });
-
-
-  });
-
+//HOVER OVER SIDEBAR LINKS
 
   $('.about').hover(function(){ $(".about").parent(".sidebar-content").addClass("about-me")},
   function() {
@@ -31973,15 +32086,25 @@ angular
 
 
 
+      // $('[data-scroll]').click(function() {
+      //   console.log("ive been clicked");
+      //     var a = $($(this).attr('data-scroll')).position();
+      //     a = a.top;
+      //     $('html, body').animate({scrollTop: a-40}, 500);
+      // });
+
+
 
 });
 
-},{}],8:[function(require,module,exports){
+},{}],9:[function(require,module,exports){
 var angular = require('angular');
 var angularRoute = require('angular-route');
+var fullPage = require('angular-fullpage.js')
 
 angular
   .module('portfolioHome',[
+    'fullPage.js'
 
   ])
 
@@ -32000,4 +32123,4 @@ angular
       })
   })
 
-},{"angular":5,"angular-route":3}]},{},[1]);
+},{"angular":6,"angular-fullpage.js":2,"angular-route":4}]},{},[1]);

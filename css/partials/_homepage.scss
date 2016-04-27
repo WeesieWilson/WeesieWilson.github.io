@@ -1,5 +1,5 @@
-.wrap{
-      margin-top: -6%;
+#full-page{
+      // margin-top: -4%;
 }
 
 .home-container{
@@ -13,15 +13,15 @@
   height: 735px;
 }
 .home-wrapper{
-      width: 93%;
+      width: 96%;
       resize: both;
       overflow: auto;
-      height: 88%;
+      height: 100%;
       overflow: hidden;
   nav{
       display: flex;
       justify-content: space-between;
-      margin-top: 1%;
+      margin-left: 4.5%;
       .logo{
           align-self: center;
         }
@@ -93,13 +93,12 @@
   }
 }
 aside{
-  height: 82%;
-  width: 20px;
-  background: #FFF;
-  position: absolute;
-  left: 13px;
-  display: flex;
-  justify-content: center;
+    height: 82%;
+    width: 55px;
+    background: #FFF;
+    position: absolute;
+    display: flex;
+    justify-content: center;
   .button{
     align-self: center;
     margin-left: -565px;
@@ -107,7 +106,7 @@ aside{
 }
 .hero-image{
   background-image: url("../../images/heroimg.jpg");
-  height: 95%;
+  height: 82%;
   width: 100%;
   background-size: cover;
 }
@@ -115,4 +114,14 @@ h3{
   color: #AFAFAF;
   font-weight: 100;
   font-family: 'Pacifico', cursive;
+}
+
+.email-footer{
+  display: flex;
+justify-content: center;
+height: 50px;
+  img{
+    height: 21px;
+align-self: center;
+  }
 }

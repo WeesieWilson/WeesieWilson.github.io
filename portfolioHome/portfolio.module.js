@@ -1,8 +1,10 @@
 var angular = require('angular');
 var angularRoute = require('angular-route');
+var fullPage = require('angular-fullpage.js')
 
 angular
   .module('portfolioHome',[
+    'fullPage.js'
 
   ])
 

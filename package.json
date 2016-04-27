@@ -6,9 +6,11 @@
   "dependencies": {},
   "devDependencies": {
     "angular": "^1.5.5",
+    "angular-fullpage.js": "^0.2.3",
     "angular-route": "^1.5.5",
     "bootstrap": "^3.3.6",
     "browserify": "^13.0.0",
+    "fullpage.js": "^2.7.9",
     "jquery": "^2.2.3",
     "jquery.localscroll": "^1.4.0",
     "node-sass": "^3.5.3",

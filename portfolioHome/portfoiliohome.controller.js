@@ -1,36 +1,30 @@
 angular
 .module('portfolioHome')
-.controller('PortfolioCtrl', function ($rootScope,$scope) {
-  $(document).ready(function(){
+.controller('PortfolioCtrl', function ($rootScope,$scope,$location, $anchorScroll) {
+
+
+//   $scope.scrollTo = function(id) {
+//    $location.hash(id);
+//    $anchorScroll();
+// };
 
 
 // SIDEBAR SLIDER
 
-    var slide = $(".slide");
+    var slide = $(".sliding");
     $(slide).animate({marginLeft: "-1000px"});
     $(".button").on("click", function(){
   		if($(slide).css("marginLeft") === "-1000px"){
   			$(slide).animate({marginLeft: "400px"});
-        $('.button').css('position', 'absolute').css('top','50%').css('left','960px');
-  		}else if($(".slide").css("marginLeft") === "400px"){
+        $('.button').css('position', 'absolute').css('top','50%').css('left','981px');
+  		}else if($(".sliding").css("marginLeft") === "400px"){
   			$(slide).animate({marginLeft: "-1000px"});
-        $('.button').css('position', 'absolute').css('top','50%').css('left','569px');
+        $('.button').css('position', 'absolute').css('top','50%').css('left','577px');
 
   		}
   	});
 
-
-
-    // $('[href^="#"]').off().on('click', function (e) {
-    //     if ($(this).attr('href') != '#') {
-    //         e.preventDefault();
-    //         $('body').animate({scrollTop: $($(this).attr('href')).offset().top}, 500);
-    //     }
-    // });
-
-
-  });
-
+//HOVER OVER SIDEBAR LINKS
 
   $('.about').hover(function(){ $(".about").parent(".sidebar-content").addClass("about-me")},
   function() {
@@ -49,6 +43,14 @@ angular
   );
 
 
+
+
+      // $('[data-scroll]').click(function() {
+      //   console.log("ive been clicked");
+      //     var a = $($(this).attr('data-scroll')).position();
+      //     a = a.top;
+      //     $('html, body').animate({scrollTop: a-40}, 500);
+      // });
 
 
 

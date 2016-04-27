@@ -76,7 +76,7 @@ label{
 
 
 .sidebar-content{
-  height: 96%;
+  height: 100%;
   width: 400px;
   background-image: linear-gradient(to right bottom, #fbe380 0%, #00b9a2 65%, #2c9fc4 100%);
   display: flex;
@@ -145,8 +145,8 @@ background-size: 100%;
 background-repeat: no-repeat;
 background-position-x: 67%;
 &:before {
-  height: 96%;
-  width: 400px;
+  height: 100%;
+    width: 419px;
   content: '';
   position: absolute;
   top: 0;
@@ -164,8 +164,8 @@ background-position-x: 67%;
   background-repeat: no-repeat;
   background-position-x: 37%;
 &:before {
-  height: 96%;
-  width: 400px;
+  height: 100%;
+    width: 419px;
   content: '';
   position: absolute;
   top: 0;
@@ -183,8 +183,8 @@ background-position-x: 67%;
   background-repeat: no-repeat;
   background-position-x: 37%;
 &:before {
-  height: 96%;
-  width: 400px;
+  height: 100%;
+    width: 419px;
   content: '';
   position: absolute;
   top: 0;
