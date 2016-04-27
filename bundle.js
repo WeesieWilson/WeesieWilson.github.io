@@ -2,18 +2,16 @@
 var angular = require('angular');
 var angularRoute = require('angular-route');
 require('./portfolioHome');
-require('./sidebar');
 
 
 
 angular
   .module('portfolio',[
     'ngRoute',
-    'portfolioHome',
-    'sidebar'
+    'portfolioHome'
   ])
 
-},{"./portfolioHome":6,"./sidebar":9,"angular":5,"angular-route":3}],2:[function(require,module,exports){
+},{"./portfolioHome":6,"angular":5,"angular-route":3}],2:[function(require,module,exports){
 /**
  * @license AngularJS v1.5.5
  * (c) 2010-2016 Google, Inc. http://angularjs.org
@@ -31928,14 +31926,6 @@ angular
   $(document).ready(function(){
 
 
-  // ﻿
-  // $('.about').hover(function(){ $(".about").parent(".sidebar-content").addClass("red")}, function() {
-  //     $(".about").parent(".sidebar-content").removeClass("red");
-  //   });
-
-
-
-
 // SIDEBAR SLIDER
 
     var slide = $(".slide");
@@ -31969,18 +31959,18 @@ angular
       $(".about").parent(".sidebar-content").removeClass("about-me");
     }
   );
+  $('.contact').hover(function(){ $(".contact").parent(".sidebar-content").addClass("contact-me")},
+  function() {
+      $(".contact").parent(".sidebar-content").removeClass("contact-me");
+    }
+  );
+  $('.travel').hover(function(){ $(".travel").parent(".sidebar-content").addClass("travel-me")},
+  function() {
+      $(".travel").parent(".sidebar-content").removeClass("travel-me");
+    }
+  );
 
-  // $('.button').click(function(){
-  //    $(".button").parent('aside').siblings('#hero-image').addClass("texture");
-  //    console.log('ive been clicked')
-  //  }
-  //  function(){
-  //     $(".button").parent('aside').siblings('#hero-image').removeClass("texture");
-  //     console.log('ive been clicked')
-  //   }
 
-
-  // );
 
 
 
@@ -32010,60 +32000,4 @@ angular
       })
   })
 
-},{"angular":5,"angular-route":3}],9:[function(require,module,exports){
-require('./sidebar.module');
-require('./sidebar.controller.js');
-
-},{"./sidebar.controller.js":10,"./sidebar.module":11}],10:[function(require,module,exports){
-angular
-.module('sidebar')
-.controller('SidebarCtrl', function ($scope, $rootScope) {
-
-
-  // $scope.showSection = 'postjob';
-
-// MATCHES CLIENTS WITH PROVIDERS ON CLIENT SIDE
-
-// $scope.matchMe = function (post) {
-//   var task = {tasks:post};
-//   MatchService.putMatches(task)
-//   .success(function(dataObj) {
-//   $scope.showSection = 'matches';
-//   $scope.matchUsers = dataObj;
-//   window.glob = $scope.matchUsers;
-//
-//   })
-//   .error(function(err) {
-//   })
-// };
-
-
-// SENDS REQUEST TO POST ROUTE
-
-// $scope.requestSent = function (user,post){
-//   console.log("USER IS THIS", user);
-//   console.log("REQUESTS ARE THESE", post);
-//   window.localStorage.setItem('requestedUser', window.JSON.stringify(user));
-//   window.localStorage.setItem('requestInfo', window.JSON.stringify(post));
-//   $rootScope.activePost = !$rootScope.activePost;
-//
-//   MatchService.postRequest(user,post)
-//   .success(function(dataObj) {
-//     console.log("SUCCESS",dataObj);
-//       $uibModalInstance.dismiss();
-//
-//   })
-//   .error(function(err) {
-//   })
-//
-// }
-
-});
-
-},{}],11:[function(require,module,exports){
-angular
-  .module('sidebar',[
-    'ngRoute'
-  ]);
-
-},{}]},{},[1]);
+},{"angular":5,"angular-route":3}]},{},[1]);

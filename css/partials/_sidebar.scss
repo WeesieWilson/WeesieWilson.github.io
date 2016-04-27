@@ -3,7 +3,6 @@ label{
       cursor:url("../../images/arrow.png"), auto;
 }
 
-
 .drawer-menu {
     box-sizing: border-box;
     -webkit-transition-property: all;
@@ -20,11 +19,9 @@ label{
     opacity: 0;
 }
 
-
 .check {
     display: none;
 }
-
 
 .menu-btn {
   display: flex;
@@ -32,8 +29,8 @@ label{
 }
 
 .bar {
-  width: 23px;
-height: 9px !important;
+    width: 23px;
+    height: 9px !important;
     -webkit-transition: all .5s;
     transition: all .5s;
     -webkit-transform-origin: left top;
@@ -53,16 +50,13 @@ height: 9px !important;
     transform-origin: left bottom;
 }
 
-.bar.top{
-  }
-
 .check:checked ~ .menu-btn .menu{
     visibility: hidden;
     opacity: 0;
 }
 
 .check:checked ~ .menu-btn .bar.top {
-    width: 41px;
+    width: 36px;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
@@ -73,7 +67,7 @@ height: 9px !important;
 }
 
 .check:checked ~ .menu-btn .bar.bottom {
-    width: 43px;
+    width: 36px;
     top: 40px;
     -webkit-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
@@ -82,7 +76,7 @@ height: 9px !important;
 
 
 .sidebar-content{
-  height: 107%;
+  height: 96%;
   width: 400px;
   background-image: linear-gradient(to right bottom, #fbe380 0%, #00b9a2 65%, #2c9fc4 100%);
   display: flex;
@@ -98,7 +92,7 @@ height: 9px !important;
     text-decoration: none;
     color: white;
 &:hover{
-  -webkit-transition: all 200ms ease-in;
+    -webkit-transition: all 200ms ease-in;
     -webkit-transform: scale(1.5);
     -ms-transition: all 200ms ease-in;
     -ms-transform: scale(1.5);
@@ -110,19 +104,12 @@ height: 9px !important;
   }
 
   img{
-    margin-bottom: -16%;
+    margin-bottom: -14%;
     align-self: flex-end;
     height: 31px;
     margin-right: 3%;
   }
 }
-
-.slide{
-      // border-right: 40px solid white;
-}
-
-
-
 
 body .center {
   position: absolute;
@@ -130,7 +117,7 @@ body .center {
   right: 0;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   text-align: center;
   height: 62px;
   margin: auto;
@@ -138,13 +125,13 @@ body .center {
 
 .scene h1 span,.scene .header span {
   -webkit-transform: scale(0);
-          transform: scale(0);
+  transform: scale(0);
   -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform;
   -webkit-transition-duration: 1s;
-          transition-duration: 1s;
+  transition-duration: 1s;
   opacity: 0;
   position: relative;
   top: 20px;
@@ -153,13 +140,12 @@ body .center {
 
 
 .about-me{
-  background-image:  url("../../images/conanme.jpg");
-
-  background-size: 100%;
+background-image:  url("../../images/conanme.jpg");
+background-size: 100%;
 background-repeat: no-repeat;
 background-position-x: 67%;
 &:before {
-  height: 107%;
+  height: 96%;
   width: 400px;
   content: '';
   position: absolute;
@@ -170,5 +156,42 @@ background-position-x: 67%;
   background-image: linear-gradient(to right bottom, #fbe380 0%, #00b9a2 65%, #2c9fc4 100%);
   opacity: .9;
   }
+}
 
+.contact-me{
+  background-image: url("../../images/bridge.jpg");
+  background-size: 190%;
+  background-repeat: no-repeat;
+  background-position-x: 37%;
+&:before {
+  height: 96%;
+  width: 400px;
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: -10px;
+  background-image: linear-gradient(to right bottom, #fbe380 0%, #00b9a2 65%, #2c9fc4 100%);
+  opacity: .9;
+  }
+}
+
+.travel-me{
+  background-image: url("../../images/church.jpg");
+  background-size: 126%;
+  background-repeat: no-repeat;
+  background-position-x: 37%;
+&:before {
+  height: 96%;
+  width: 400px;
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: -10px;
+  background-image: linear-gradient(to right bottom, #fbe380 0%, #00b9a2 65%, #2c9fc4 100%);
+  opacity: .9;
+  }
 }

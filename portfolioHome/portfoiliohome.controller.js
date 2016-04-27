@@ -4,14 +4,6 @@ angular
   $(document).ready(function(){
 
 
-  // ﻿
-  // $('.about').hover(function(){ $(".about").parent(".sidebar-content").addClass("red")}, function() {
-  //     $(".about").parent(".sidebar-content").removeClass("red");
-  //   });
-
-
-
-
 // SIDEBAR SLIDER
 
     var slide = $(".slide");
@@ -45,18 +37,18 @@ angular
       $(".about").parent(".sidebar-content").removeClass("about-me");
     }
   );
+  $('.contact').hover(function(){ $(".contact").parent(".sidebar-content").addClass("contact-me")},
+  function() {
+      $(".contact").parent(".sidebar-content").removeClass("contact-me");
+    }
+  );
+  $('.travel').hover(function(){ $(".travel").parent(".sidebar-content").addClass("travel-me")},
+  function() {
+      $(".travel").parent(".sidebar-content").removeClass("travel-me");
+    }
+  );
 
-  // $('.button').click(function(){
-  //    $(".button").parent('aside').siblings('#hero-image').addClass("texture");
-  //    console.log('ive been clicked')
-  //  }
-  //  function(){
-  //     $(".button").parent('aside').siblings('#hero-image').removeClass("texture");
-  //     console.log('ive been clicked')
-  //   }
 
-
-  // );
 
 
 

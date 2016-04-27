@@ -1,10 +1,11 @@
 @import 'partials/homepage.scss';
 @import 'partials/sidebar.scss';
+@import 'partials/aboutpage.scss';
 
 
 body{
   background-color: white;
   font-family: 'Oxygen', sans-serif;
-  cursor:url("../../images/silhouette.png"), auto;
-  // cursor:url("../../images/arrow.png"), auto;
+  // cursor:url("../../images/silhouette.png"), auto;
+  cursor:url("../../images/arrow.png"), auto;
 }

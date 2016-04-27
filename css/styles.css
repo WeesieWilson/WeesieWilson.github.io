@@ -1,5 +1,5 @@
 .wrap {
-  margin-top: -4%; }
+  margin-top: -6%; }
 
 .home-container {
   background-color: white;
@@ -9,7 +9,7 @@
   resize: both;
   overflow: auto;
   width: 100%;
-  height: 109%; }
+  height: 735px; }
 
 .home-wrapper {
   width: 93%;
@@ -28,7 +28,8 @@
   display: flex;
   justify-content: space-around;
   width: 17%;
-  margin-bottom: .5%; }
+  margin-bottom: -0.5%;
+  align-items: center; }
   .social-container .git {
     cursor: url("../../images/handreg.png"), auto;
     border-radius: 51%;
@@ -99,6 +100,11 @@ aside {
   width: 100%;
   background-size: cover; }
 
+h3 {
+  color: #AFAFAF;
+  font-weight: 100;
+  font-family: 'Pacifico', cursive; }
+
 label {
   font-weight: normal;
   cursor: url("../../images/arrow.png"), auto; }
@@ -149,7 +155,7 @@ label {
   opacity: 0; }
 
 .check:checked ~ .menu-btn .bar.top {
-  width: 41px;
+  width: 36px;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg); }
@@ -158,14 +164,14 @@ label {
   opacity: 0; }
 
 .check:checked ~ .menu-btn .bar.bottom {
-  width: 43px;
+  width: 36px;
   top: 40px;
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg); }
 
 .sidebar-content {
-  height: 107%;
+  height: 96%;
   width: 400px;
   background-image: linear-gradient(to right bottom, #fbe380 0%, #00b9a2 65%, #2c9fc4 100%);
   display: flex;
@@ -190,7 +196,7 @@ label {
       transition: all 200ms ease-in;
       transform: scale(1.5); }
   .sidebar-content img {
-    margin-bottom: -16%;
+    margin-bottom: -14%;
     align-self: flex-end;
     height: 31px;
     margin-right: 3%; }
@@ -226,7 +232,7 @@ body .center {
   background-repeat: no-repeat;
   background-position-x: 67%; }
   .about-me:before {
-    height: 107%;
+    height: 96%;
     width: 400px;
     content: '';
     position: absolute;
@@ -237,7 +243,77 @@ body .center {
     background-image: linear-gradient(to right bottom, #fbe380 0%, #00b9a2 65%, #2c9fc4 100%);
     opacity: .9; }
 
+.contact-me {
+  background-image: url("../../images/bridge.jpg");
+  background-size: 190%;
+  background-repeat: no-repeat;
+  background-position-x: 37%; }
+  .contact-me:before {
+    height: 96%;
+    width: 400px;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: -10px;
+    background-image: linear-gradient(to right bottom, #fbe380 0%, #00b9a2 65%, #2c9fc4 100%);
+    opacity: .9; }
+
+.travel-me {
+  background-image: url("../../images/church.jpg");
+  background-size: 126%;
+  background-repeat: no-repeat;
+  background-position-x: 37%; }
+  .travel-me:before {
+    height: 96%;
+    width: 400px;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: -10px;
+    background-image: linear-gradient(to right bottom, #fbe380 0%, #00b9a2 65%, #2c9fc4 100%);
+    opacity: .9; }
+
+.about-container {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  resize: both;
+  overflow: auto;
+  width: 100%;
+  height: 735px; }
+
+.about-wrapper {
+  width: 93%;
+  resize: both;
+  overflow: auto;
+  height: 88%;
+  overflow: hidden; }
+  .about-wrapper nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1%; }
+    .about-wrapper nav .logo {
+      align-self: center; }
+
+.about-image {
+  background-color: #fbe380;
+  height: 95%;
+  width: 100%;
+  background-size: cover; }
+  .about-image:before {
+    height: 78.5%;
+    width: 952px;
+    content: '';
+    position: absolute;
+    background-image: url("../../images/texture.png");
+    opacity: .9; }
+
 body {
   background-color: white;
   font-family: 'Oxygen', sans-serif;
-  cursor: url("../../images/silhouette.png"), auto; }
+  cursor: url("../../images/arrow.png"), auto; }

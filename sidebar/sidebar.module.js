@@ -1,4 +1,0 @@
-angular
-  .module('sidebar',[
-    'ngRoute'
-  ]);
