@@ -10,6 +10,7 @@
     "bootstrap": "^3.3.6",
     "browserify": "^13.0.0",
     "jquery": "^2.2.3",
+    "jquery.localscroll": "^1.4.0",
     "node-sass": "^3.5.3",
     "serve": "^1.4.0",
     "underscore": "^1.8.3",

@@ -1,1 +1,2 @@
-require('./portfolio.module')
+require('./portfolio.module');
+require('./portfoiliohome.controller')

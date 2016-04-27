@@ -10,7 +10,7 @@ angular
     $routeProvider
       .when('/',{
         templateUrl: './portfolioHome/templates/home.html',
-        // controller: 'portfolioController'
+        controller: 'PortfolioCtrl'
 
       })
       .when('/404',{

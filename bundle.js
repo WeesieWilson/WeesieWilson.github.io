@@ -2,16 +2,18 @@
 var angular = require('angular');
 var angularRoute = require('angular-route');
 require('./portfolioHome');
+require('./sidebar');
 
 
 
 angular
   .module('portfolio',[
     'ngRoute',
-    'portfolioHome'
+    'portfolioHome',
+    'sidebar'
   ])
 
-},{"./portfolioHome":6,"angular":5,"angular-route":3}],2:[function(require,module,exports){
+},{"./portfolioHome":6,"./sidebar":9,"angular":5,"angular-route":3}],2:[function(require,module,exports){
 /**
  * @license AngularJS v1.5.5
  * (c) 2010-2016 Google, Inc. http://angularjs.org
@@ -31916,9 +31918,75 @@ require('./angular');
 module.exports = angular;
 
 },{"./angular":4}],6:[function(require,module,exports){
-require('./portfolio.module')
+require('./portfolio.module');
+require('./portfoiliohome.controller')
 
-},{"./portfolio.module":7}],7:[function(require,module,exports){
+},{"./portfoiliohome.controller":7,"./portfolio.module":8}],7:[function(require,module,exports){
+angular
+.module('portfolioHome')
+.controller('PortfolioCtrl', function ($rootScope,$scope) {
+  $(document).ready(function(){
+
+
+  // ﻿
+  // $('.about').hover(function(){ $(".about").parent(".sidebar-content").addClass("red")}, function() {
+  //     $(".about").parent(".sidebar-content").removeClass("red");
+  //   });
+
+
+
+
+// SIDEBAR SLIDER
+
+    var slide = $(".slide");
+    $(slide).animate({marginLeft: "-1000px"});
+    $(".button").on("click", function(){
+  		if($(slide).css("marginLeft") === "-1000px"){
+  			$(slide).animate({marginLeft: "400px"});
+        $('.button').css('position', 'absolute').css('top','50%').css('left','960px');
+  		}else if($(".slide").css("marginLeft") === "400px"){
+  			$(slide).animate({marginLeft: "-1000px"});
+        $('.button').css('position', 'absolute').css('top','50%').css('left','569px');
+
+  		}
+  	});
+
+
+
+    // $('[href^="#"]').off().on('click', function (e) {
+    //     if ($(this).attr('href') != '#') {
+    //         e.preventDefault();
+    //         $('body').animate({scrollTop: $($(this).attr('href')).offset().top}, 500);
+    //     }
+    // });
+
+
+  });
+
+
+  $('.about').hover(function(){ $(".about").parent(".sidebar-content").addClass("about-me")},
+  function() {
+      $(".about").parent(".sidebar-content").removeClass("about-me");
+    }
+  );
+
+  // $('.button').click(function(){
+  //    $(".button").parent('aside').siblings('#hero-image').addClass("texture");
+  //    console.log('ive been clicked')
+  //  }
+  //  function(){
+  //     $(".button").parent('aside').siblings('#hero-image').removeClass("texture");
+  //     console.log('ive been clicked')
+  //   }
+
+
+  // );
+
+
+
+});
+
+},{}],8:[function(require,module,exports){
 var angular = require('angular');
 var angularRoute = require('angular-route');
 
@@ -31931,7 +31999,7 @@ angular
     $routeProvider
       .when('/',{
         templateUrl: './portfolioHome/templates/home.html',
-        // controller: 'portfolioController'
+        controller: 'PortfolioCtrl'
 
       })
       .when('/404',{
@@ -31942,4 +32010,60 @@ angular
       })
   })
 
-},{"angular":5,"angular-route":3}]},{},[1]);
+},{"angular":5,"angular-route":3}],9:[function(require,module,exports){
+require('./sidebar.module');
+require('./sidebar.controller.js');
+
+},{"./sidebar.controller.js":10,"./sidebar.module":11}],10:[function(require,module,exports){
+angular
+.module('sidebar')
+.controller('SidebarCtrl', function ($scope, $rootScope) {
+
+
+  // $scope.showSection = 'postjob';
+
+// MATCHES CLIENTS WITH PROVIDERS ON CLIENT SIDE
+
+// $scope.matchMe = function (post) {
+//   var task = {tasks:post};
+//   MatchService.putMatches(task)
+//   .success(function(dataObj) {
+//   $scope.showSection = 'matches';
+//   $scope.matchUsers = dataObj;
+//   window.glob = $scope.matchUsers;
+//
+//   })
+//   .error(function(err) {
+//   })
+// };
+
+
+// SENDS REQUEST TO POST ROUTE
+
+// $scope.requestSent = function (user,post){
+//   console.log("USER IS THIS", user);
+//   console.log("REQUESTS ARE THESE", post);
+//   window.localStorage.setItem('requestedUser', window.JSON.stringify(user));
+//   window.localStorage.setItem('requestInfo', window.JSON.stringify(post));
+//   $rootScope.activePost = !$rootScope.activePost;
+//
+//   MatchService.postRequest(user,post)
+//   .success(function(dataObj) {
+//     console.log("SUCCESS",dataObj);
+//       $uibModalInstance.dismiss();
+//
+//   })
+//   .error(function(err) {
+//   })
+//
+// }
+
+});
+
+},{}],11:[function(require,module,exports){
+angular
+  .module('sidebar',[
+    'ngRoute'
+  ]);
+
+},{}]},{},[1]);
