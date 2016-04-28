@@ -107,8 +107,9 @@ aside {
     font-size: 93px; }
   .hero-image .twop {
     font-family: 'Pacifico', cursive;
-    margin-top: -7%;
-    color: #adadad; }
+    margin-top: -10%;
+    color: #adadad;
+    font-size: 35px; }
 
 h3 {
   color: #AFAFAF;
@@ -251,13 +252,13 @@ body .center {
   background-position-x: 67%; }
   .about-me:before {
     height: 100%;
-    width: 419px;
+    width: 400px;
     content: '';
     position: absolute;
     top: 0;
-    right: 0;
+    right: 0px;
     bottom: 0;
-    left: -10px;
+    left: 8px;
     background-image: linear-gradient(to right bottom, #fbe380 0%, #00b9a2 65%, #2c9fc4 100%);
     opacity: .9; }
 
@@ -268,13 +269,13 @@ body .center {
   background-position-x: 37%; }
   .contact-me:before {
     height: 100%;
-    width: 419px;
+    width: 400px;
     content: '';
     position: absolute;
     top: 0;
-    right: 0;
+    right: 0px;
     bottom: 0;
-    left: -10px;
+    left: 8px;
     background-image: linear-gradient(to right bottom, #fbe380 0%, #00b9a2 65%, #2c9fc4 100%);
     opacity: .9; }
 
@@ -285,13 +286,13 @@ body .center {
   background-position-x: 37%; }
   .travel-me:before {
     height: 100%;
-    width: 419px;
+    width: 400px;
     content: '';
     position: absolute;
     top: 0;
-    right: 0;
+    right: 0px;
     bottom: 0;
-    left: -10px;
+    left: 8px;
     background-image: linear-gradient(to right bottom, #fbe380 0%, #00b9a2 65%, #2c9fc4 100%);
     opacity: .9; }
 
@@ -336,33 +337,39 @@ body .center {
   resize: both;
   overflow: auto;
   width: 100%;
-  height: 735px; }
+  height: 735px;
+  margin-top: -2%; }
+  .work-container aside {
+    height: 87%; }
 
 .work-wrapper {
-  width: 93%;
+  width: 96%;
   resize: both;
   overflow: auto;
-  height: 88%;
+  height: 94%;
   overflow: hidden; }
   .work-wrapper nav {
     display: flex;
     justify-content: space-between;
-    margin-top: 1%; }
+    margin-top: 1%;
+    margin-left: 4%; }
     .work-wrapper nav .logo {
       align-self: center; }
 
 .work-image {
-  background-color: #fbe380;
   height: 95%;
   width: 100%;
-  background-size: cover; }
-  .work-image:before {
-    height: 78.5%;
-    width: 952px;
-    content: '';
-    position: absolute;
-    background-image: url("../../images/texture.png");
-    opacity: .9; }
+  display: flex;
+  justify-content: space-between;
+  align-content: stretch;
+  flex-flow: row wrap; }
+  .work-image .project-box {
+    background-color: lightgreen;
+    width: 31%;
+    height: 265px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
   .home-wrapper {

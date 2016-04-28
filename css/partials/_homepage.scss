@@ -116,29 +116,15 @@ aside{
 flex-flow: column;
 justify-content: center;
 align-items: center;
-// &:before{
-//   content: "";
-//   background-image: url("../../images/texture.png");
-//   background-color: yellow;
-//   opacity: 0.5;
-//   top: 0;
-//   left: 0;
-//   bottom: 0;
-//   right: 0;
-//   position: absolute;
-//
-// }
-
-
 .onep{
   color: #fbe380;
   font-size: 93px;
 }
 .twop{
   font-family: 'Pacifico', cursive;
-  margin-top: -7%;
-  color: #adadad;
-
+    margin-top: -10%;
+    color: #adadad;
+    font-size: 35px;
 }
 
 }

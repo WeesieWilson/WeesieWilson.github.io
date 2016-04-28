@@ -146,15 +146,15 @@ background-repeat: no-repeat;
 background-position-x: 67%;
 &:before {
   height: 100%;
-    width: 419px;
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: -10px;
-  background-image: linear-gradient(to right bottom, #fbe380 0%, #00b9a2 65%, #2c9fc4 100%);
-  opacity: .9;
+width: 400px;
+content: '';
+position: absolute;
+top: 0;
+right: 0px;
+bottom: 0;
+left: 8px;
+background-image: linear-gradient(to right bottom, #fbe380 0%, #00b9a2 65%, #2c9fc4 100%);
+opacity: .9;
   }
 }
 
@@ -165,13 +165,13 @@ background-position-x: 67%;
   background-position-x: 37%;
 &:before {
   height: 100%;
-    width: 419px;
+  width: 400px;
   content: '';
   position: absolute;
   top: 0;
-  right: 0;
+  right: 0px;
   bottom: 0;
-  left: -10px;
+  left: 8px;
   background-image: linear-gradient(to right bottom, #fbe380 0%, #00b9a2 65%, #2c9fc4 100%);
   opacity: .9;
   }
@@ -184,13 +184,13 @@ background-position-x: 67%;
   background-position-x: 37%;
 &:before {
   height: 100%;
-    width: 419px;
+  width: 400px;
   content: '';
   position: absolute;
   top: 0;
-  right: 0;
+  right: 0px;
   bottom: 0;
-  left: -10px;
+  left: 8px;
   background-image: linear-gradient(to right bottom, #fbe380 0%, #00b9a2 65%, #2c9fc4 100%);
   opacity: .9;
   }
