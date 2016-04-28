@@ -32053,14 +32053,14 @@ angular
 // SIDEBAR SLIDER
 
     var slide = $(".sliding");
-    $(slide).animate({marginLeft: "-1000px"});
+    $(slide).animate({marginLeft: "-414px"});
     $(".button").on("click", function(){
-  		if($(slide).css("marginLeft") === "-1000px"){
+  		if($(slide).css("marginLeft") === "-414px"){
   			$(slide).animate({marginLeft: "400px"});
-        $('.button').css('position', 'absolute').css('top','50%').css('left','981px');
+        // $('.button').css('position', 'absolute').css('top','50%').css('left','5px');
   		}else if($(".sliding").css("marginLeft") === "400px"){
-  			$(slide).animate({marginLeft: "-1000px"});
-        $('.button').css('position', 'absolute').css('top','50%').css('left','577px');
+  			$(slide).animate({marginLeft: "-414px"});
+        // $('.button').css('position', 'absolute').css('top','50%').css('left','577px');
 
   		}
   	});

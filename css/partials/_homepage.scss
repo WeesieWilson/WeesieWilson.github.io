@@ -100,15 +100,47 @@ aside{
     display: flex;
     justify-content: center;
   .button{
-    align-self: center;
-    margin-left: -565px;
+    position: absolute;
+  top: 50%;
+  /* left: 174%; */
+  /* right: 199px; */
+  margin-left: 406px;
   }
 }
 .hero-image{
-  background-image: url("../../images/heroimg.jpg");
+   background-image: linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.7)),url('../../images/church.jpg');
   height: 82%;
   width: 100%;
   background-size: cover;
+  display: flex;
+flex-flow: column;
+justify-content: center;
+align-items: center;
+// &:before{
+//   content: "";
+//   background-image: url("../../images/texture.png");
+//   background-color: yellow;
+//   opacity: 0.5;
+//   top: 0;
+//   left: 0;
+//   bottom: 0;
+//   right: 0;
+//   position: absolute;
+//
+// }
+
+
+.onep{
+  color: #fbe380;
+  font-size: 93px;
+}
+.twop{
+  font-family: 'Pacifico', cursive;
+  margin-top: -7%;
+  color: #adadad;
+
+}
+
 }
 h3{
   color: #AFAFAF;
