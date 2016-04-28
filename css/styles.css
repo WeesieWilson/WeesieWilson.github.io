@@ -364,6 +364,31 @@ body .center {
     background-image: url("../../images/texture.png");
     opacity: .9; }
 
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  .home-wrapper {
+    height: 100%; }
+  nav {
+    display: flex;
+    justify-content: center !important;
+    align-items: center; }
+    nav .logo {
+      display: none; }
+    nav .social-container {
+      display: none; }
+  aside {
+    width: 1px; }
+    aside .button {
+      display: none; }
+  .hero-image {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("../../images/church.jpg");
+    height: 77%;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center; } }
+
 body {
   background-color: white;
   font-family: 'Oxygen', sans-serif;
