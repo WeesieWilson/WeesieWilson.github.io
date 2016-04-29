@@ -40,6 +40,69 @@ angular
   );
 
 
+  $('.surf').hover(function () {
+      $('.surf').append(' <a  id="button" href="https://github.com/WeesieWilson/surfPaddleTwo" >' + 'Code' + '</a>');
+      $(".surf").addClass("surf-hover");
+      $(".surf").siblings(".event").addClass("event-surf-hover");
+      $(".surf").siblings(".maid").addClass("maid-surf-hover");
+      $(".surf").siblings(".must").addClass("must-surf-hover");
+      $(".surf").siblings(".jeo").addClass("jeo-surf-hover");
+      $(".surf").siblings(".todo").addClass("todo-surf-hover");
+  }
+  ,function () {
+      $("#button").remove();
+      $(".surf").removeClass("surf-hover");
+      $(".surf").siblings(".event").removeClass("event-surf-hover");
+      $(".surf").siblings(".maid").removeClass("maid-surf-hover");
+      $(".surf").siblings(".must").removeClass("must-surf-hover");
+      $(".surf").siblings(".jeo").removeClass("jeo-surf-hover");
+      $(".surf").siblings(".todo").removeClass("todo-surf-hover");
+
+  })
+
+  $('.event').hover(function () {
+      $('.event').append(' <a  id="button" href="https://github.com/WeesieWilson/surfPaddleTwo" >' + 'Code' + '</a>');
+      $(".event").addClass("event-hover");
+      $(".event").siblings(".surf").addClass("surf-event-hover");
+      $(".event").siblings(".maid").addClass("maid-event-hover");
+      $(".event").siblings(".must").addClass("must-event-hover");
+      $(".event").siblings(".jeo").addClass("jeo-event-hover");
+      $(".event").siblings(".todo").addClass("todo-event-hover");
+  }
+  ,function () {
+      $("#button").remove();
+      $(".event").removeClass("event-hover");
+      $(".event").siblings(".surf").removeClass("surf-event-hover");
+      $(".event").siblings(".maid").removeClass("maid-event-hover");
+      $(".event").siblings(".must").removeClass("must-event-hover");
+      $(".event").siblings(".jeo").removeClass("jeo-event-hover");
+      $(".event").siblings(".todo").removeClass("todo-event-hover");
+
+  })
+
+  $('.maid').hover(function () {
+      $('.maid').append(' <a  id="button" href="https://github.com/WeesieWilson/surfPaddleTwo" >' + 'Code' + '</a>');
+      $(".maid").addClass("maid-hover");
+      $(".maid").siblings(".surf").addClass("surf-maid-hover");
+      $(".maid").siblings(".event").addClass("event-maid-hover");
+      $(".maid").siblings(".must").addClass("must-maid-hover");
+      $(".maid").siblings(".jeo").addClass("jeo-maid-hover");
+      $(".maid").siblings(".todo").addClass("todo-maid-hover");
+  }
+  ,function () {
+      $("#button").remove();
+      $(".maid").removeClass("maid-hover");
+      $(".maid").siblings(".surf").removeClass("surf-maid-hover");
+      $(".maid").siblings(".event").removeClass("event-maid-hover");
+      $(".maid").siblings(".must").removeClass("must-maid-hover");
+      $(".maid").siblings(".jeo").removeClass("jeo-maid-hover");
+      $(".maid").siblings(".todo").removeClass("todo-maid-hover");
+
+  })
+
+
+
+
 
 
 

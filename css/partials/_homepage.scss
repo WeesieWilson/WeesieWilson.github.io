@@ -126,6 +126,14 @@ align-items: center;
     color: #adadad;
     font-size: 35px;
 }
+.threep{
+  align-self: flex-end;
+  margin-bottom: -13%;
+  font-size: 11px;
+  margin-top: 142px;
+  color: #adadad;
+  font-weight: 400;
+}
 
 }
 h3{
@@ -142,4 +150,8 @@ height: 50px;
     height: 21px;
 align-self: center;
   }
+}
+
+.telephone-footer{
+  display: none;
 }

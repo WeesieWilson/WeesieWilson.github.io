@@ -38,12 +38,262 @@ overflow: hidden;
   align-content: stretch;
   flex-flow: row wrap;
   .project-box{
-    background-color: lightgreen;
+    background-color: white;
     width: 31%;
-  height: 265px;
+  height: 280px;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  }
+  .maid{
+    background-image: url("../../images/maidmyday.png");
+background-size: 85%;
+/* background-repeat: no-repeat; */
+background-position-x: 98%;
+background-position-y: 34%;
+font-size: 36px;
+font-weight: 800;
+color: #8B8BE6;
+font-family: 'Pacifico', cursive;
+&:hover{
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("../../images/maidmyday.png");
+
+}
+
+  }
+  .event{
+    display: flex;
+justify-content: space-between;
+align-items: center;
+font-size: 36px;
+font-weight: 800;
+color: #CEFF6D;
+font-family: 'Fjalla One', sans-serif;
+.margin{
+margin-left: 16%;
+}
+img{
+  width: 52px;
+  height: 153px;
+  &:hover{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
+
+  }
+}
+&:hover{
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
+
+}
+
+  }
+  .surf{
+position: relative;
+//     background-image: url("../../images/surfboard.png");
+// background-size: 85%;
+//  background-repeat: no-repeat;
+//  background-position-x: 44%;
+//      background-position-y: 141%;
+font-size: 36px;
+font-weight: 800;
+color: #FF9600;
+font-family: 'Rock Salt', cursive;
+display: flex;
+flex-flow: column;
+justify-content: center;
+align-content: center;
+// &:hover{
+//   background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("../../images/surfboard.png");
+//
+// }
+p{
+      margin-bottom: -25%;
+}
+img{
+  height: initial;
+width: 72%;
+}
+a{
+  position: absolute;
+  top: 58%;
+left: 32%;
+}
+
   }
 
+  .surf-hover{
+
+    background-color: rgba(255, 255, 255, 0.7);
+opacity: 0.6;
+
+  }
+
+  .event-hover{
+
+    background-color: rgba(255, 255, 255, 0.7);
+opacity: 0.6;
+
+  }
+
+  .maid-hover{
+
+    background-color: rgba(255, 255, 255, 0.7);
+opacity: 0.6;
+
+  }
+
+.event-surf-hover{
+  // background-image: url("../../images/surfboard.png");
+  background-image: url("../../images/left-top.jpeg") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  p{
+    display: none;
+  }
+  img{
+    display: none;
+  }
+
+}
+.maid-surf-hover{
+  background-image: url("../../images/left-bottom.jpeg") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  p{
+    display: none;
+  }
+
+}
+.must-surf-hover{
+  background-image: url("../../images/bottom-middle.jpeg") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  p{
+    display: none;
+  }
+
+}
+.jeo-surf-hover{
+  background-image: url("../../images/top-middle.jpeg") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  p{
+    display: none;
+  }
+
+}
+.todo-surf-hover{
+  background-image: url("../../images/bottom-right.jpeg") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  p{
+    display: none;
+  }
+
+}
+.surf-event-hover{
+  // background-image: url("../../images/surfboard.png");
+  background-image: url("../../images/event-top-right.jpeg") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  p{
+    display: none;
+  }
+  img{
+    display: none;
+  }
+
+}
+.maid-event-hover{
+  background-image: url("../../images/event-bottom-right.jpeg") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  p{
+    display: none;
+  }
+
+}
+.must-event-hover{
+  background-image: url("../../images/event-bottom-middle.jpeg") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  p{
+    display: none;
+  }
+
+}
+.jeo-event-hover{
+  background-image: url("../../images/event-top-middle.jpeg") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  p{
+    display: none;
+  }
+
+}
+.todo-event-hover{
+  background-image: url("../../images/event-bottom-right.jpeg") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  p{
+    display: none;
+  }
+
+}
+
+
+
+
+
+
+
+.surf-maid-hover{
+  // background-image: url("../../images/surfboard.png");
+  background-image: url("../../images/maid-top-right.jpeg") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  p{
+    display: none;
+  }
+  img{
+    display: none;
+  }
+
+}
+.event-maid-hover{
+  background-image: url("../../images/maid-top-left.jpeg") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  p{
+    display: none;
+  }
+
+}
+.must-maid-hover{
+  background-image: url("../../images/maid-bottom-middle.jpeg") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  p{
+    display: none;
+  }
+
+}
+.jeo-maid-hover{
+  background-image: url("../../images/maid-top-middle.jpeg") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  p{
+    display: none;
+  }
+
+}
+.todo-maid-hover{
+  background-image: url("../../images/maid-bottom-right.jpeg") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  p{
+    display: none;
+  }
+
+}
 }
