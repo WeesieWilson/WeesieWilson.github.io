@@ -32139,6 +32139,27 @@ angular
       $(".maid").siblings(".jeo").removeClass("jeo-maid-hover");
       $(".maid").siblings(".todo").removeClass("todo-maid-hover");
 
+  });
+
+
+  $('.todo').hover(function () {
+      $('.todo').append(' <a  id="button" href="/todo" >' + 'LIve' + '</a>');
+      // $(".event").addClass("event-hover");
+      // $(".event").siblings(".surf").addClass("surf-event-hover");
+      // $(".event").siblings(".maid").addClass("maid-event-hover");
+      // $(".event").siblings(".must").addClass("must-event-hover");
+      // $(".event").siblings(".jeo").addClass("jeo-event-hover");
+      // $(".event").siblings(".todo").addClass("todo-event-hover");
+  }
+  ,function () {
+      $("#button").remove();
+      // $(".event").removeClass("event-hover");
+      // $(".event").siblings(".surf").removeClass("surf-event-hover");
+      // $(".event").siblings(".maid").removeClass("maid-event-hover");
+      // $(".event").siblings(".must").removeClass("must-event-hover");
+      // $(".event").siblings(".jeo").removeClass("jeo-event-hover");
+      // $(".event").siblings(".todo").removeClass("todo-event-hover");
+
   })
 
 
