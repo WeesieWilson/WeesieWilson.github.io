@@ -10,6 +10,9 @@
   margin-top: -2%;
   aside{
         height: 87%;
+        img{
+          display: none;
+        }
   }
 }
 .work-wrapper{
@@ -47,53 +50,77 @@ overflow: hidden;
 
   }
   .maid{
-    background-image: url("../../images/maidmyday.png");
-background-size: 85%;
+    background-image: linear-gradient(rgba(143, 249, 242,0.9),rgba(143, 249, 242,0.9)), url("../../images/kom-bottom-left.jpeg");
+background-size: cover;
 /* background-repeat: no-repeat; */
-background-position-x: 98%;
-background-position-y: 34%;
+width: 33% !important;
 font-size: 36px;
 font-weight: 800;
-color: #8B8BE6;
-font-family: 'Pacifico', cursive;
-&:hover{
-  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("../../images/maidmyday.png");
-
+color: rgb(143, 82, 223);
+font-family: 'Short Stack', cursive;
+text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+p{
+      margin-left: 12%;
 }
 
+
+  }
+
+
+
+  .todo{
+    background-image: linear-gradient(rgba(250, 61, 98,0.8),rgba(250, 61, 98,0.8)), url("../../images/todo-bottom-right.jpeg");
+background-size: cover;
+background-repeat: no-repeat;
+
+font-size: 71px;
+font-weight: 800;
+color: #E5D6D6;
+font-family: "Raleway", sans-serif;
+
+
+  }
+
+  .must{
+    background-image: linear-gradient(rgba(245, 232, 50,0.8),rgba(245, 232, 50,0.8)), url("../../images/must-bottom-middle.jpeg");
+font-family: 'Droid Sans', sans-serif;
+color: red;
+// text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 50px;
   }
   .event{
-    display: flex;
-justify-content: space-between;
-align-items: center;
+    width: 33% !important;
+    background-image: linear-gradient(rgba(15, 130, 219,0.8),rgba(15, 130, 219,0.8)), url("../../images/event-top-left.jpg");
+    background-size: cover;
+
+
+
 font-size: 36px;
 font-weight: 800;
 color: #CEFF6D;
 font-family: 'Fjalla One', sans-serif;
-.margin{
-margin-left: 16%;
+p{
+
+margin-left: 11%;
 }
-img{
-  width: 52px;
-  height: 153px;
-  &:hover{
-    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
 
   }
-}
-&:hover{
-  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
+  // .event-hover{
+  //   opacity: 0.6;
+  //   -webkit-transition: all 200ms ease-in;
+  //
+  // }
 
-}
+  .must-hover{
+    opacity: 0.6;
+    -webkit-transition: all 200ms ease-in;
+
 
   }
   .surf{
+    background-image: linear-gradient(rgba(36, 136, 110,0.8),rgba(36, 136, 110,0.8)), url("../../images/surf-top-right.jpeg");
+    background-size: cover;
 position: relative;
-//     background-image: url("../../images/surfboard.png");
-// background-size: 85%;
-//  background-repeat: no-repeat;
-//  background-position-x: 44%;
-//      background-position-y: 141%;
 font-size: 36px;
 font-weight: 800;
 color: #FF9600;
@@ -102,45 +129,29 @@ display: flex;
 flex-flow: column;
 justify-content: center;
 align-content: center;
-// &:hover{
-//   background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("../../images/surfboard.png");
-//
-// }
-p{
-      margin-bottom: -25%;
-}
-img{
-  height: initial;
-width: 72%;
-}
-a{
-  position: absolute;
-  top: 58%;
-left: 32%;
-}
+
 
   }
 
-  .surf-hover{
 
-    background-color: rgba(255, 255, 255, 0.7);
+  .todo-hover{
+
+    -webkit-transition: all 200ms ease-in;
+
 opacity: 0.6;
 
   }
 
-  .event-hover{
 
-    background-color: rgba(255, 255, 255, 0.7);
-opacity: 0.6;
+    .surf-hover{
 
-  }
+      -webkit-transition: all 200ms ease-in;
 
-  .maid-hover{
+  opacity: 0.6;
 
-    background-color: rgba(255, 255, 255, 0.7);
-opacity: 0.6;
+    }
 
-  }
+
 
 .event-surf-hover{
   // background-image: url("../../images/surfboard.png");
@@ -289,6 +300,125 @@ opacity: 0.6;
 }
 .todo-maid-hover{
   background-image: url("../../images/maid-bottom-right.jpeg") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  p{
+    display: none;
+  }
+
+}
+
+
+
+
+.surf-must-hover{
+  // background-image: url("../../images/surfboard.png");
+  background-image: url("../../images/must-top-right.jpeg") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  p{
+    display: none;
+  }
+  img{
+    display: none;
+  }
+
+}
+.event-must-hover{
+  background-image: url("../../images/must-top-left.jpeg") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  p{
+    display: none;
+  }
+
+}
+.todo-must-hover{
+  background-image: url("../../images/must-bottom-right.jpeg") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  p{
+    display: none;
+  }
+
+}
+.jeo-must-hover{
+  background-image: url("../../images/must-top-middle.jpeg") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  p{
+    display: none;
+  }
+
+}
+.maid-must-hover{
+  background-image: url("../../images/must-bottom-left.jpeg") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  p{
+    display: none;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.surf-todo-hover{
+  // background-image: url("../../images/surfboard.png");
+  background-image: url("../../images/todo-top-right.jpeg") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  p{
+    display: none;
+  }
+  img{
+    display: none;
+  }
+
+}
+.event-todo-hover{
+  background-image: url("../../images/todo-top-left.jpeg") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  p{
+    display: none;
+  }
+
+}
+.must-todo-hover{
+  background-image: url("../../images/todo-bottom-middle.jpeg") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  p{
+    display: none;
+  }
+
+}
+.jeo-todo-hover{
+  background-image: url("../../images/todo-top-middle.jpeg") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  p{
+    display: none;
+  }
+
+}
+.maid-todo-hover{
+  background-image: url("../../images/todo-bottom-left.jpeg") !important;
   background-repeat: no-repeat;
   background-size: cover;
   p{

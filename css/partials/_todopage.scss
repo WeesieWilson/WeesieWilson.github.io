@@ -1,0 +1,21 @@
+.todo-page{
+.work-image{
+  background-color: lightblue;
+  .project-box{
+    display: none;
+  }
+}
+  aside{
+
+        height: 87%;
+        display: flex;
+        justify-content: center;
+align-items: center;
+        img{
+          display: inline-flex !important;
+          height: 40px;
+          width: 40px;
+
+        }
+  }
+}
