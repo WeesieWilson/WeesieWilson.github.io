@@ -20,6 +20,9 @@
     margin-left: 4.5%; }
     .home-wrapper nav .logo {
       align-self: center; }
+      .home-wrapper nav .logo img {
+        height: 49px;
+        width: 75px; }
 
 .social-container {
   display: flex;
@@ -91,7 +94,13 @@ aside {
     top: 50%;
     /* left: 174%; */
     /* right: 199px; */
-    margin-left: 406px; }
+    margin-left: 385px; }
+    aside .button p {
+      transform: rotate(-90deg);
+      font-family: 'Raleway', sans-serif;
+      font-size: 21px;
+      letter-spacing: 3px;
+      font-weight: 100; }
 
 .hero-image {
   background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("../../images/church.jpg");
@@ -139,6 +148,7 @@ label {
   cursor: url("../../images/arrow.png"), auto; }
 
 .drawer-menu {
+  -webkit-transition: all 200ms ease-in;
   box-sizing: border-box;
   -webkit-transition-property: all;
   transition-property: all;
@@ -200,35 +210,32 @@ label {
   transform: rotate(-45deg); }
 
 .sidebar-content {
+  -webkit-transition: all 200ms ease-in;
   height: 100%;
   width: 400px;
-  background-image: linear-gradient(to right bottom, #fbe380 0%, #00b9a2 65%, #2c9fc4 100%);
+  background-color: white;
   display: flex;
   flex-flow: column;
   align-items: center;
-  justify-content: space-around;
   border-right: 40px solid white; }
-  .sidebar-content a {
-    z-index: 10000;
-    font-family: 'Oxygen', sans-serif;
-    font-weight: 600;
-    font-size: 26px;
-    text-decoration: none;
-    color: white; }
-    .sidebar-content a:hover {
-      -webkit-transition: all 200ms ease-in;
-      -webkit-transform: scale(1.5);
-      -ms-transition: all 200ms ease-in;
-      -ms-transform: scale(1.5);
-      -moz-transition: all 200ms ease-in;
-      -moz-transform: scale(1.5);
-      transition: all 200ms ease-in;
-      transform: scale(1.5); }
-  .sidebar-content img {
-    margin-bottom: -14%;
-    align-self: flex-end;
-    height: 31px;
-    margin-right: 3%; }
+  .sidebar-content .bio-image {
+    background-image: url("../../images/conanme.jpg");
+    background-size: 83%;
+    /* border-radius: 100%; */
+    height: 482px;
+    width: 100%;
+    background-repeat: no-repeat;
+    /* align-self: initial; */
+    background-position-y: 21%;
+    align-self: center;
+    margin-left: 20%; }
+  .sidebar-content p {
+    margin-left: 3%;
+    color: #FBE380;
+    font-size: 18px; }
+    .sidebar-content p span {
+      font-family: Pacifico;
+      color: grey; }
 
 body .center {
   position: absolute;

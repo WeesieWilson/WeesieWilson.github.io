@@ -24,6 +24,10 @@
       margin-left: 4.5%;
       .logo{
           align-self: center;
+          img{
+            height: 49px;
+width: 75px;
+          }
         }
     }
 }
@@ -104,7 +108,14 @@ aside{
   top: 50%;
   /* left: 174%; */
   /* right: 199px; */
-  margin-left: 406px;
+  margin-left: 385px;
+  p{
+    transform: rotate(-90deg);
+    font-family: 'Raleway', sans-serif;
+    font-size: 21px;
+letter-spacing: 3px;
+font-weight: 100;
+  }
   }
 }
 .hero-image{
