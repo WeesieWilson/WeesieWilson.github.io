@@ -26,9 +26,13 @@ overflow: hidden;
       justify-content: space-between;
       margin-top: 1%;
           margin-left: 4%;
-      .logo{
-          align-self: center;
-        }
+          .logo{
+              align-self: center;
+              img{
+                height: 49px;
+    width: 75px;
+              }
+            }
     }
 }
 
@@ -40,6 +44,15 @@ overflow: hidden;
   justify-content: space-between;
   align-content: stretch;
   flex-flow: row wrap;
+  .event-detail{
+    display: none;
+  }
+  .todo-detail{
+    display: none;
+  }
+  .must-detail{
+    display: none;
+  }
   .project-box{
     background-color: white;
     width: 31%;

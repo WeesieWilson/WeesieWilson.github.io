@@ -138,10 +138,19 @@ h3 {
   height: 50px; }
   .email-footer img {
     height: 21px;
-    align-self: center; }
+    align-self: center;
+    -webkit-animation: bounce 2200ms ease-out; }
 
 .telephone-footer {
   display: none; }
+
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0); }
+  40% {
+    -webkit-transform: translateY(-30px); }
+  60% {
+    -webkit-transform: translateY(-15px); } }
 
 label {
   font-weight: normal;
@@ -313,39 +322,6 @@ body .center {
     background-image: linear-gradient(to right bottom, #fbe380 0%, #00b9a2 65%, #2c9fc4 100%);
     opacity: .9; }
 
-.about-container {
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  resize: both;
-  overflow: auto;
-  width: 100%;
-  height: 735px;
-  margin-top: -2%; }
-  .about-container aside {
-    height: 87%; }
-
-.about-wrapper {
-  width: 96%;
-  resize: both;
-  overflow: auto;
-  height: 94%;
-  overflow: hidden; }
-  .about-wrapper nav {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 1%;
-    margin-left: 4%; }
-    .about-wrapper nav .logo {
-      align-self: center; }
-
-.about-image {
-  background-color: #fbe380;
-  height: 95%;
-  width: 100%;
-  background-size: cover; }
-
 .work-container {
   background-color: white;
   display: flex;
@@ -374,6 +350,9 @@ body .center {
     margin-left: 4%; }
     .work-wrapper nav .logo {
       align-self: center; }
+      .work-wrapper nav .logo img {
+        height: 49px;
+        width: 75px; }
 
 .work-image {
   height: 95%;
@@ -382,6 +361,12 @@ body .center {
   justify-content: space-between;
   align-content: stretch;
   flex-flow: row wrap; }
+  .work-image .event-detail {
+    display: none; }
+  .work-image .todo-detail {
+    display: none; }
+  .work-image .must-detail {
+    display: none; }
   .work-image .project-box {
     background-color: white;
     width: 31%;
@@ -676,9 +661,43 @@ body .center {
     width: 40px; }
 
 .event-page .work-image {
-  background-color: lightgreen; }
+  background-image: linear-gradient(rgba(11, 6, 100, 0.7), rgba(11, 6, 6, 0.7)), url("../../images/churchview.jpg");
+  background-size: cover; }
   .event-page .work-image .project-box {
     display: none; }
+
+.event-page .event-detail {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-family: Raleway;
+  color: white; }
+  .event-page .event-detail h1 {
+    font-size: 95px; }
+  .event-page .event-detail p {
+    font-family: Pacifico; }
+  .event-page .event-detail .check-it-out {
+    display: flex;
+    width: 79%;
+    justify-content: space-between;
+    text-decoration: none;
+    color: white; }
+    .event-page .event-detail .check-it-out a {
+      text-decoration: none;
+      color: white;
+      width: 16%;
+      display: flex;
+      justify-content: space-around;
+      border: 1px solid white;
+      font-family: Raleway; }
+      .event-page .event-detail .check-it-out a p {
+        font-family: Raleway; }
+      .event-page .event-detail .check-it-out a img {
+        align-self: center;
+        height: 46px;
+        width: 39px; }
 
 .event-page aside {
   height: 87%;
@@ -691,9 +710,43 @@ body .center {
     width: 40px; }
 
 .todo-page .work-image {
-  background-color: lightblue; }
+  background-image: linear-gradient(rgba(11, 6, 100, 0.7), rgba(11, 6, 6, 0.7)), url("../../images/tennis.jpg");
+  background-size: cover; }
   .todo-page .work-image .project-box {
     display: none; }
+
+.todo-page .todo-detail {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-family: Raleway;
+  color: white; }
+  .todo-page .todo-detail h1 {
+    font-size: 95px; }
+  .todo-page .todo-detail p {
+    font-family: Pacifico; }
+  .todo-page .todo-detail .check-it-out {
+    display: flex;
+    width: 79%;
+    justify-content: space-between;
+    text-decoration: none;
+    color: white; }
+    .todo-page .todo-detail .check-it-out a {
+      text-decoration: none;
+      color: white;
+      width: 16%;
+      display: flex;
+      justify-content: space-around;
+      border: 1px solid white;
+      font-family: Raleway; }
+      .todo-page .todo-detail .check-it-out a p {
+        font-family: Raleway; }
+      .todo-page .todo-detail .check-it-out a img {
+        align-self: center;
+        height: 46px;
+        width: 39px; }
 
 .todo-page aside {
   height: 87%;
@@ -701,6 +754,55 @@ body .center {
   justify-content: center;
   align-items: center; }
   .todo-page aside img {
+    display: inline-flex !important;
+    height: 40px;
+    width: 40px; }
+
+.must-page .work-image {
+  background-image: linear-gradient(rgba(11, 6, 100, 0.7), rgba(11, 6, 6, 0.7)), url("../../images/miami.jpg");
+  background-size: cover; }
+  .must-page .work-image .project-box {
+    display: none; }
+
+.must-page .must-detail {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-family: Raleway;
+  color: white; }
+  .must-page .must-detail h1 {
+    font-size: 95px; }
+  .must-page .must-detail p {
+    font-family: Pacifico; }
+  .must-page .must-detail .check-it-out {
+    display: flex;
+    width: 79%;
+    justify-content: space-between;
+    text-decoration: none;
+    color: white; }
+    .must-page .must-detail .check-it-out a {
+      text-decoration: none;
+      color: white;
+      width: 16%;
+      display: flex;
+      justify-content: space-around;
+      border: 1px solid white;
+      font-family: Raleway; }
+      .must-page .must-detail .check-it-out a p {
+        font-family: Raleway; }
+      .must-page .must-detail .check-it-out a img {
+        align-self: center;
+        height: 46px;
+        width: 39px; }
+
+.must-page aside {
+  height: 87%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .must-page aside img {
     display: inline-flex !important;
     height: 40px;
     width: 40px; }

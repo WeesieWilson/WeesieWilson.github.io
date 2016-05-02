@@ -32043,13 +32043,6 @@ angular
 .module('portfolioHome')
 .controller('PortfolioCtrl', function ($rootScope,$scope,$location, $anchorScroll) {
 
-
-//   $scope.scrollTo = function(id) {
-//    $location.hash(id);
-//    $anchorScroll();
-// };
-
-
 // SIDEBAR SLIDER
 
     var slide = $(".sliding");
@@ -32057,32 +32050,33 @@ angular
     $(".button").on("click", function(){
   		if($(slide).css("marginLeft") === "-414px"){
   			$(slide).animate({marginLeft: "400px"});
+        $(".button").animate({marginLeft: "365px"});
   		}else if($(".sliding").css("marginLeft") === "400px"){
   			$(slide).animate({marginLeft: "-414px"});
+        $(".button").animate({marginLeft: "385px"});
   		}
   	});
 
 //HOVER OVER SIDEBAR LINKS
 
-  $('.about').hover(function(){ $(".about").parent(".sidebar-content").addClass("about-me")},
-  function() {
-      $(".about").parent(".sidebar-content").removeClass("about-me");
-    }
-  );
-  $('.contact').hover(function(){ $(".contact").parent(".sidebar-content").addClass("contact-me")},
-  function() {
-      $(".contact").parent(".sidebar-content").removeClass("contact-me");
-    }
-  );
-  $('.travel').hover(function(){ $(".travel").parent(".sidebar-content").addClass("travel-me")},
-  function() {
-      $(".travel").parent(".sidebar-content").removeClass("travel-me");
-    }
-  );
+  // $('.about').hover(function(){ $(".about").parent(".sidebar-content").addClass("about-me")},
+  // function() {
+  //     $(".about").parent(".sidebar-content").removeClass("about-me");
+  //   }
+  // );
+  // $('.contact').hover(function(){ $(".contact").parent(".sidebar-content").addClass("contact-me")},
+  // function() {
+  //     $(".contact").parent(".sidebar-content").removeClass("contact-me");
+  //   }
+  // );
+  // $('.travel').hover(function(){ $(".travel").parent(".sidebar-content").addClass("travel-me")},
+  // function() {
+  //     $(".travel").parent(".sidebar-content").removeClass("travel-me");
+  //   }
+  // );
 
 
   $('.surf').hover(function () {
-      // $('.surf').append('<div class="hover-button">' + ' <a  id="code" href="https://github.com/WeesieWilson/surfPaddleTwo" >' + 'Code' + '</a>' + ' <a  id="live" href="/surfPaddleTwo" >' + 'Live' + '</a>' + '</div>');
       $(".surf").addClass("surf-hover");
       $(".surf").siblings(".event").addClass("event-surf-hover");
       $(".surf").siblings(".maid").addClass("maid-surf-hover");
@@ -32091,7 +32085,6 @@ angular
       $(".surf").siblings(".todo").addClass("todo-surf-hover");
   }
   ,function () {
-      // $(".hover-button").remove();
       $(".surf").removeClass("surf-hover");
       $(".surf").siblings(".event").removeClass("event-surf-hover");
       $(".surf").siblings(".maid").removeClass("maid-surf-hover");
@@ -32103,29 +32096,29 @@ angular
 
   $('.surf').click(function(){
     $(".surf").parent().closest('.work-wrapper').addClass("surf-page");
-    console.log('ive been clicked');
   });
   $('.event').click(function(){
     $(".event").parent().closest('.work-wrapper').addClass("event-page");
-    console.log('ive been clicked');
   });
   $('.todo').click(function(){
     $(".todo").parent().closest('.work-wrapper').addClass("todo-page");
-    console.log('ive been clicked');
+  });
+  $('.must').click(function(){
+    $(".must").parent().closest('.work-wrapper').addClass("must-page");
   });
 
   $('.projects-aside').click(function(){
     $(".projects-aside").parent().parent().removeClass("surf-page");
-    console.log('ive been clicked');
   });
   $('.projects-aside').click(function(){
     $(".projects-aside").parent().parent().removeClass("event-page");
-    console.log('ive been clicked');
   });
 
   $('.projects-aside').click(function(){
     $(".projects-aside").parent().parent().removeClass("todo-page");
-    console.log('ive been clicked');
+  });
+  $('.projects-aside').click(function(){
+    $(".projects-aside").parent().parent().removeClass("must-page");
   });
 
 

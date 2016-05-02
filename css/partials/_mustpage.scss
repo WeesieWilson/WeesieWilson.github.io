@@ -1,12 +1,12 @@
-.todo-page{
+.must-page{
 .work-image{
-  background-image: linear-gradient(rgba(11, 6, 100, 0.7), rgba(11, 6, 6, 0.7)),url('../../images/tennis.jpg');
+  background-image: linear-gradient(rgba(11, 6, 100, 0.7), rgba(11, 6, 6, 0.7)),url('../../images/miami.jpg');
   background-size: cover;
   .project-box{
     display: none;
   }
 }
-.todo-detail{
+.must-detail{
   display: flex;
   flex-flow: column;
 justify-content: center;
