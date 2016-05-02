@@ -26,12 +26,17 @@
           align-self: center;
           img{
             height: 49px;
-width: 75px;
+            width: 75px;
+            -webkit-animation: drop 2500ms ease-out;
           }
         }
     }
 }
+@-webkit-keyframes drop{
+0% {    -webkit-transform:translateX(5000%); }
 
+100% {    -webkit-transform:translateX(0%); }
+}
 .social-container{
   display: flex;
   justify-content: space-around;
