@@ -16,23 +16,6 @@ angular
   		}
   	});
 
-//HOVER OVER SIDEBAR LINKS
-
-  // $('.about').hover(function(){ $(".about").parent(".sidebar-content").addClass("about-me")},
-  // function() {
-  //     $(".about").parent(".sidebar-content").removeClass("about-me");
-  //   }
-  // );
-  // $('.contact').hover(function(){ $(".contact").parent(".sidebar-content").addClass("contact-me")},
-  // function() {
-  //     $(".contact").parent(".sidebar-content").removeClass("contact-me");
-  //   }
-  // );
-  // $('.travel').hover(function(){ $(".travel").parent(".sidebar-content").addClass("travel-me")},
-  // function() {
-  //     $(".travel").parent(".sidebar-content").removeClass("travel-me");
-  //   }
-  // );
 
 
   $('.surf').hover(function () {
@@ -65,6 +48,9 @@ angular
   $('.must').click(function(){
     $(".must").parent().closest('.work-wrapper').addClass("must-page");
   });
+  $('.jeo').click(function(){
+    $(".jeo").parent().closest('.work-wrapper').addClass("jeo-page");
+  });
 
   $('.projects-aside').click(function(){
     $(".projects-aside").parent().parent().removeClass("surf-page");
@@ -79,11 +65,13 @@ angular
   $('.projects-aside').click(function(){
     $(".projects-aside").parent().parent().removeClass("must-page");
   });
+  $('.projects-aside').click(function(){
+    $(".projects-aside").parent().parent().removeClass("jeo-page");
+  });
 
 
 
   $('.event').hover(function () {
-      // $('.event').append(' <a  id="button" href="https://github.com/WeesieWilson/surfPaddleTwo" >' + 'Code' + '</a>');
       $(".event").addClass("event-hover");
       $(".event").siblings(".surf").addClass("surf-event-hover");
       $(".event").siblings(".maid").addClass("maid-event-hover");
@@ -103,7 +91,6 @@ angular
   })
 
   $('.maid').hover(function () {
-      // $('.maid').append(' <a  id="button" href="https://github.com/WeesieWilson/surfPaddleTwo" >' + 'Code' + '</a>');
       $(".maid").addClass("maid-hover");
       $(".maid").siblings(".surf").addClass("surf-maid-hover");
       $(".maid").siblings(".event").addClass("event-maid-hover");
@@ -112,7 +99,6 @@ angular
       $(".maid").siblings(".todo").addClass("todo-maid-hover");
   }
   ,function () {
-      // $("#button").remove();
       $(".maid").removeClass("maid-hover");
       $(".maid").siblings(".surf").removeClass("surf-maid-hover");
       $(".maid").siblings(".event").removeClass("event-maid-hover");
@@ -124,7 +110,6 @@ angular
 
 
   $('.todo').hover(function () {
-      // $('.todo').append(' <a  id="button" href="/todo" >' + 'Live' + '</a>');
       $(".todo").addClass("todo-hover");
       $(".todo").siblings(".surf").addClass("surf-todo-hover");
       $(".todo").siblings(".maid").addClass("maid-todo-hover");
@@ -147,7 +132,6 @@ angular
 
 
   $('.must').hover(function () {
-      // $('.todo').append(' <a  id="button" href="/todo" >' + 'Live' + '</a>');
       $(".must").addClass("must-hover");
       $(".must").siblings(".surf").addClass("surf-must-hover");
       $(".must").siblings(".maid").addClass("maid-must-hover");
@@ -156,13 +140,31 @@ angular
       $(".must").siblings(".event").addClass("event-must-hover");
   }
   ,function () {
-      // $("#button").remove();
       $(".must").removeClass("must-hover");
       $(".must").siblings(".surf").removeClass("surf-must-hover");
       $(".must").siblings(".maid").removeClass("maid-must-hover");
       $(".must").siblings(".todo").removeClass("todo-must-hover");
       $(".must").siblings(".jeo").removeClass("jeo-must-hover");
       $(".must").siblings(".event").removeClass("event-must-hover");
+
+  })
+
+
+  $('.jeo').hover(function () {
+      $(".jeo").addClass("jeo-hover");
+      $(".jeo").siblings(".event").addClass("event-jeo-hover");
+      $(".jeo").siblings(".maid").addClass("maid-jeo-hover");
+      $(".jeo").siblings(".must").addClass("must-jeo-hover");
+      $(".jeo").siblings(".surf").addClass("surf-jeo-hover");
+      $(".jeo").siblings(".todo").addClass("todo-jeo-hover");
+  }
+  ,function () {
+      $(".jeo").removeClass("jeo-hover");
+      $(".jeo").siblings(".event").removeClass("event-jeo-hover");
+      $(".jeo").siblings(".maid").removeClass("maid-jeo-hover");
+      $(".jeo").siblings(".must").removeClass("must-jeo-hover");
+      $(".jeo").siblings(".surf").removeClass("surf-jeo-hover");
+      $(".jeo").siblings(".todo").removeClass("todo-jeo-hover");
 
   })
 

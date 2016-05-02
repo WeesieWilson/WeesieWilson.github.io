@@ -37,7 +37,6 @@ overflow: hidden;
 }
 
 .work-image{
-  // background-color: #fbe380;
   height: 95%;
   width: 100%;
   display: flex;
@@ -45,6 +44,9 @@ overflow: hidden;
   align-content: stretch;
   flex-flow: row wrap;
   .event-detail{
+    display: none;
+  }
+  .jeo-detail{
     display: none;
   }
   .todo-detail{
@@ -63,9 +65,8 @@ overflow: hidden;
 
   }
   .maid{
-    background-image: linear-gradient(rgba(143, 249, 242,0.9),rgba(143, 249, 242,0.9)), url("../../images/kom-bottom-left.jpeg");
+    background-image: linear-gradient(rgba(240, 247, 238,1),rgba(240, 247, 238,1)), url("../../images/kom-bottom-left.jpeg");
 background-size: cover;
-/* background-repeat: no-repeat; */
 width: 33% !important;
 font-size: 36px;
 font-weight: 800;
@@ -79,10 +80,22 @@ p{
 
   }
 
+  .jeo{
+    background-image: linear-gradient(rgba(196, 215, 242,1),rgba(196, 215, 242,1)),url("../../images/etsy-top-middle.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 100%;
+p{
+      margin-left: 12%;
+}
+
+
+  }
+
 
 
   .todo{
-    background-image: linear-gradient(rgba(250, 61, 98,0.8),rgba(250, 61, 98,0.8)), url("../../images/todo-bottom-right.jpeg");
+    background-image: linear-gradient(rgba(175, 222, 220,1),rgba(175, 222, 220,1)), url("../../images/todo-bottom-right.jpeg");
 background-size: cover;
 background-repeat: no-repeat;
 
@@ -95,7 +108,7 @@ font-family: "Raleway", sans-serif;
   }
 
   .must{
-    background-image: linear-gradient(rgba(245, 232, 50,0.8),rgba(245, 232, 50,0.8)), url("../../images/must-bottom-middle.jpeg");
+    background-image: linear-gradient(rgba(145, 168, 164,1),rgba(145, 168, 164,1)), url("../../images/must-bottom-middle.jpeg");
 font-family: 'Droid Sans', sans-serif;
 color: red;
 // text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
@@ -103,7 +116,7 @@ color: red;
   }
   .event{
     width: 33% !important;
-    background-image: linear-gradient(rgba(15, 130, 219,0.8),rgba(15, 130, 219,0.8)), url("../../images/event-top-left.jpg");
+    background-image: linear-gradient(rgba(119, 104, 113,1),rgba(119, 104, 113,1)), url("../../images/event-top-left.jpg");
     background-size: cover;
 
 
@@ -118,11 +131,6 @@ margin-left: 11%;
 }
 
   }
-  // .event-hover{
-  //   opacity: 0.6;
-  //   -webkit-transition: all 200ms ease-in;
-  //
-  // }
 
   .must-hover{
     opacity: 0.6;
@@ -130,8 +138,14 @@ margin-left: 11%;
 
 
   }
+  .jeo-hover{
+    opacity: 0.6;
+    -webkit-transition: all 200ms ease-in;
+
+
+  }
   .surf{
-    background-image: linear-gradient(rgba(36, 136, 110,0.8),rgba(36, 136, 110,0.8)), url("../../images/surf-top-right.jpeg");
+    background-image: linear-gradient(rgba(0, 53, 89,1),rgba(0, 53, 89,1)), url("../../images/surf-top-right.jpeg");
     background-size: cover;
 position: relative;
 font-size: 36px;
@@ -432,6 +446,63 @@ opacity: 0.6;
 }
 .maid-todo-hover{
   background-image: url("../../images/todo-bottom-left.jpeg") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  p{
+    display: none;
+  }
+
+}
+
+
+
+
+
+
+
+
+.surf-jeo-hover{
+  // background-image: url("../../images/surfboard.png");
+  background-image: url("../../images/etsy-top-right.jpeg") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  p{
+    display: none;
+  }
+  img{
+    display: none;
+  }
+
+}
+.event-jeo-hover{
+  background-image: url("../../images/etsy-top-left.jpeg") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  p{
+    display: none;
+  }
+
+}
+.must-jeo-hover{
+  background-image: url("../../images/etsy-bottom-middle.jpeg") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  p{
+    display: none;
+  }
+
+}
+.todo-jeo-hover{
+  background-image: url("../../images/etsy-bottom-right.jpeg") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  p{
+    display: none;
+  }
+
+}
+.maid-jeo-hover{
+  background-image: url("../../images/etsy-bottom-left.jpeg") !important;
   background-repeat: no-repeat;
   background-size: cover;
   p{

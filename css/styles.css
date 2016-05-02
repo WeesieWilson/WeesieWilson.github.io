@@ -363,6 +363,8 @@ body .center {
   flex-flow: row wrap; }
   .work-image .event-detail {
     display: none; }
+  .work-image .jeo-detail {
+    display: none; }
   .work-image .todo-detail {
     display: none; }
   .work-image .must-detail {
@@ -375,9 +377,8 @@ body .center {
     justify-content: center;
     align-items: center; }
   .work-image .maid {
-    background-image: linear-gradient(rgba(143, 249, 242, 0.9), rgba(143, 249, 242, 0.9)), url("../../images/kom-bottom-left.jpeg");
+    background-image: linear-gradient(#f0f7ee, #f0f7ee), url("../../images/kom-bottom-left.jpeg");
     background-size: cover;
-    /* background-repeat: no-repeat; */
     width: 33% !important;
     font-size: 36px;
     font-weight: 800;
@@ -386,8 +387,15 @@ body .center {
     text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white; }
     .work-image .maid p {
       margin-left: 12%; }
+  .work-image .jeo {
+    background-image: linear-gradient(#c4d7f2, #c4d7f2), url("../../images/etsy-top-middle.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 100%; }
+    .work-image .jeo p {
+      margin-left: 12%; }
   .work-image .todo {
-    background-image: linear-gradient(rgba(250, 61, 98, 0.8), rgba(250, 61, 98, 0.8)), url("../../images/todo-bottom-right.jpeg");
+    background-image: linear-gradient(#afdedc, #afdedc), url("../../images/todo-bottom-right.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     font-size: 71px;
@@ -395,13 +403,13 @@ body .center {
     color: #E5D6D6;
     font-family: "Raleway", sans-serif; }
   .work-image .must {
-    background-image: linear-gradient(rgba(245, 232, 50, 0.8), rgba(245, 232, 50, 0.8)), url("../../images/must-bottom-middle.jpeg");
+    background-image: linear-gradient(#91a8a4, #91a8a4), url("../../images/must-bottom-middle.jpeg");
     font-family: 'Droid Sans', sans-serif;
     color: red;
     font-size: 50px; }
   .work-image .event {
     width: 33% !important;
-    background-image: linear-gradient(rgba(15, 130, 219, 0.8), rgba(15, 130, 219, 0.8)), url("../../images/event-top-left.jpg");
+    background-image: linear-gradient(#776871, #776871), url("../../images/event-top-left.jpg");
     background-size: cover;
     font-size: 36px;
     font-weight: 800;
@@ -412,8 +420,11 @@ body .center {
   .work-image .must-hover {
     opacity: 0.6;
     -webkit-transition: all 200ms ease-in; }
+  .work-image .jeo-hover {
+    opacity: 0.6;
+    -webkit-transition: all 200ms ease-in; }
   .work-image .surf {
-    background-image: linear-gradient(rgba(36, 136, 110, 0.8), rgba(36, 136, 110, 0.8)), url("../../images/surf-top-right.jpeg");
+    background-image: linear-gradient(#003559, #003559), url("../../images/surf-top-right.jpeg");
     background-size: cover;
     position: relative;
     font-size: 36px;
@@ -589,6 +600,38 @@ body .center {
     background-repeat: no-repeat;
     background-size: cover; }
     .work-image .maid-todo-hover p {
+      display: none; }
+  .work-image .surf-jeo-hover {
+    background-image: url("../../images/etsy-top-right.jpeg") !important;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    .work-image .surf-jeo-hover p {
+      display: none; }
+    .work-image .surf-jeo-hover img {
+      display: none; }
+  .work-image .event-jeo-hover {
+    background-image: url("../../images/etsy-top-left.jpeg") !important;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    .work-image .event-jeo-hover p {
+      display: none; }
+  .work-image .must-jeo-hover {
+    background-image: url("../../images/etsy-bottom-middle.jpeg") !important;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    .work-image .must-jeo-hover p {
+      display: none; }
+  .work-image .todo-jeo-hover {
+    background-image: url("../../images/etsy-bottom-right.jpeg") !important;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    .work-image .todo-jeo-hover p {
+      display: none; }
+  .work-image .maid-jeo-hover {
+    background-image: url("../../images/etsy-bottom-left.jpeg") !important;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    .work-image .maid-jeo-hover p {
       display: none; }
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
@@ -803,6 +846,55 @@ body .center {
   justify-content: center;
   align-items: center; }
   .must-page aside img {
+    display: inline-flex !important;
+    height: 40px;
+    width: 40px; }
+
+.jeo-page .work-image {
+  background-image: linear-gradient(rgba(11, 6, 100, 0.7), rgba(11, 6, 6, 0.7)), url("../../images/bird.jpg");
+  background-size: cover; }
+  .jeo-page .work-image .project-box {
+    display: none; }
+
+.jeo-page .jeo-detail {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-family: Raleway;
+  color: white; }
+  .jeo-page .jeo-detail h1 {
+    font-size: 95px; }
+  .jeo-page .jeo-detail p {
+    font-family: Pacifico; }
+  .jeo-page .jeo-detail .check-it-out {
+    display: flex;
+    width: 79%;
+    justify-content: space-between;
+    text-decoration: none;
+    color: white; }
+    .jeo-page .jeo-detail .check-it-out a {
+      text-decoration: none;
+      color: white;
+      width: 16%;
+      display: flex;
+      justify-content: space-around;
+      border: 1px solid white;
+      font-family: Raleway; }
+      .jeo-page .jeo-detail .check-it-out a p {
+        font-family: Raleway; }
+      .jeo-page .jeo-detail .check-it-out a img {
+        align-self: center;
+        height: 46px;
+        width: 39px; }
+
+.jeo-page aside {
+  height: 87%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .jeo-page aside img {
     display: inline-flex !important;
     height: 40px;
     width: 40px; }

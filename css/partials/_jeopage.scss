@@ -1,0 +1,62 @@
+.jeo-page{
+.work-image{
+  background-image: linear-gradient(rgba(11, 6, 100, 0.7), rgba(11, 6, 6, 0.7)),url('../../images/bird.jpg');
+  background-size: cover;
+  .project-box{
+    display: none;
+  }
+}
+.jeo-detail{
+  display: flex;
+  flex-flow: column;
+justify-content: center;
+align-items: center;
+width: 100%;
+font-family: Raleway;
+color: white;
+h1{
+      font-size: 95px;
+}
+p{
+  font-family: Pacifico;
+}
+.check-it-out{
+  display: flex;
+width: 79%;
+justify-content: space-between;
+text-decoration: none;
+color: white;
+
+a{
+  text-decoration: none;
+  color: white;
+  width: 16%;
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid white;
+  font-family: Raleway;
+  p{
+    font-family: Raleway;
+  }
+  img{
+    align-self: center;
+    height: 46px;
+width: 39px;
+  }
+}
+}
+}
+  aside{
+
+        height: 87%;
+        display: flex;
+        justify-content: center;
+align-items: center;
+        img{
+          display: inline-flex !important;
+          height: 40px;
+          width: 40px;
+
+        }
+  }
+}
