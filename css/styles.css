@@ -99,8 +99,6 @@ aside {
   aside .button {
     position: absolute;
     top: 50%;
-    /* left: 174%; */
-    /* right: 199px; */
     margin-left: 385px; }
     aside .button p {
       transform: rotate(-90deg);
@@ -341,7 +339,7 @@ body .center {
   margin-top: -2%; }
   .work-container aside {
     height: 87%; }
-    .work-container aside img {
+    .work-container aside p {
       display: none; }
 
 .work-wrapper {
@@ -376,6 +374,8 @@ body .center {
     display: none; }
   .work-image .must-detail {
     display: none; }
+  .work-image .surf-detail {
+    display: none; }
   .work-image .project-box {
     background-color: white;
     width: 31%;
@@ -386,36 +386,40 @@ body .center {
   .work-image .maid {
     background-image: linear-gradient(#f0f7ee, #f0f7ee), url("../../images/kom-bottom-left.jpeg");
     background-size: cover;
-    width: 33% !important;
+    width: 34% !important;
+    font-family: 'Fjalla One', sans-serif;
     font-size: 36px;
     font-weight: 800;
-    color: #8f52df;
-    font-family: 'Short Stack', cursive;
-    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white; }
+    color: #6C2B9C; }
     .work-image .maid p {
       margin-left: 12%; }
   .work-image .jeo {
     background-image: linear-gradient(#c4d7f2, #c4d7f2), url("../../images/etsy-top-middle.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-y: 100%; }
-    .work-image .jeo p {
-      margin-left: 12%; }
+    background-position-y: 100%;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+    color: #2B3031; }
   .work-image .todo {
     background-image: linear-gradient(#afdedc, #afdedc), url("../../images/todo-bottom-right.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
-    font-size: 71px;
-    font-weight: 800;
-    color: #E5D6D6;
-    font-family: "Raleway", sans-serif; }
+    color: #E8B8B8;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 36px;
+    font-weight: 800; }
   .work-image .must {
     background-image: linear-gradient(#91a8a4, #91a8a4), url("../../images/must-bottom-middle.jpeg");
-    font-family: 'Droid Sans', sans-serif;
-    color: red;
-    font-size: 50px; }
+    font-family: 'Fjalla One', sans-serif;
+    color: #D03F3F;
+    font-size: 50px;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 36px;
+    font-weight: 800; }
   .work-image .event {
-    width: 33% !important;
+    width: 34% !important;
     background-image: linear-gradient(#776871, #776871), url("../../images/event-top-left.jpg");
     background-size: cover;
     font-size: 36px;
@@ -431,17 +435,12 @@ body .center {
     opacity: 0.6;
     -webkit-transition: all 200ms ease-in; }
   .work-image .surf {
+    font-family: 'Fjalla One', sans-serif;
     background-image: linear-gradient(#003559, #003559), url("../../images/surf-top-right.jpeg");
     background-size: cover;
-    position: relative;
     font-size: 36px;
     font-weight: 800;
-    color: #FF9600;
-    font-family: 'Rock Salt', cursive;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-content: center; }
+    color: #FF9600; }
   .work-image .todo-hover {
     -webkit-transition: all 200ms ease-in;
     opacity: 0.6; }
@@ -641,6 +640,312 @@ body .center {
     .work-image .maid-jeo-hover p {
       display: none; }
 
+.surf-page .work-image {
+  background-image: linear-gradient(rgba(0, 53, 89, 0.8), rgba(0, 53, 89, 0.8)), url("../../images/surf.jpg");
+  background-size: 123%;
+  background-repeat: no-repeat;
+  background-position-x: 42%; }
+  .surf-page .work-image .project-box {
+    display: none; }
+
+.surf-page .surf-detail {
+  width: 89%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-family: Raleway;
+  color: #FF9600; }
+  .surf-page .surf-detail h1 {
+    font-size: 95px;
+    margin-left: 5%;
+    margin-top: 6%; }
+  .surf-page .surf-detail p {
+    width: 50%;
+    font-size: 17px;
+    text-align: center;
+    letter-spacing: 0px;
+    font-family: Raleway;
+    font-family: Oxygen; }
+  .surf-page .surf-detail .check-it-out {
+    margin-left: 6%;
+    margin-top: 12%;
+    display: flex;
+    width: 79%;
+    justify-content: space-between;
+    text-decoration: none; }
+    .surf-page .surf-detail .check-it-out a {
+      text-decoration: none;
+      color: white;
+      width: 16%;
+      display: flex;
+      justify-content: space-around;
+      border: 2px solid white;
+      font-family: Raleway;
+      border-radius: 4%; }
+      .surf-page .surf-detail .check-it-out a p {
+        font-family: Raleway; }
+      .surf-page .surf-detail .check-it-out a img {
+        align-self: center;
+        height: 46px;
+        width: 39px; }
+
+.surf-page aside {
+  height: 87%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .surf-page aside p {
+    display: inline-flex !important;
+    transform: rotate(-90deg);
+    font-family: 'Raleway', sans-serif;
+    font-size: 21px;
+    letter-spacing: 3px;
+    font-weight: 100; }
+
+.event-page .work-image {
+  background-image: linear-gradient(rgba(119, 104, 113, 0.6), rgba(119, 104, 113, 0.6)), url("../../images/churchview.jpg");
+  background-size: cover; }
+  .event-page .work-image .project-box {
+    display: none; }
+
+.event-page .event-detail {
+  width: 89%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-family: Raleway;
+  color: #CEFF6D; }
+  .event-page .event-detail h1 {
+    font-size: 95px;
+    margin-left: 5%;
+    margin-top: 6%; }
+  .event-page .event-detail p {
+    width: 50%;
+    font-size: 17px;
+    text-align: center;
+    letter-spacing: 0px;
+    font-family: Raleway;
+    font-family: Oxygen; }
+  .event-page .event-detail .check-it-out {
+    margin-left: 6%;
+    margin-top: 12%;
+    display: flex;
+    width: 79%;
+    justify-content: space-between;
+    text-decoration: none; }
+    .event-page .event-detail .check-it-out a {
+      text-decoration: none;
+      color: white;
+      width: 16%;
+      display: flex;
+      justify-content: space-around;
+      border: 2px solid white;
+      font-family: Raleway;
+      border-radius: 4%; }
+      .event-page .event-detail .check-it-out a p {
+        font-family: Raleway; }
+      .event-page .event-detail .check-it-out a img {
+        align-self: center;
+        height: 46px;
+        width: 39px; }
+
+.event-page aside {
+  height: 87%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .event-page aside p {
+    display: inline-flex !important;
+    transform: rotate(-90deg);
+    font-family: 'Raleway', sans-serif;
+    font-size: 21px;
+    letter-spacing: 3px;
+    font-weight: 100; }
+
+.todo-page .work-image {
+  background-image: linear-gradient(rgba(11, 6, 100, 0.7), rgba(11, 6, 6, 0.7)), url("../../images/tennis.jpg");
+  background-size: cover; }
+  .todo-page .work-image .project-box {
+    display: none; }
+
+.todo-page .todo-detail {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-family: Raleway;
+  color: white; }
+  .todo-page .todo-detail h1 {
+    font-size: 95px; }
+  .todo-page .todo-detail p {
+    font-family: Pacifico; }
+  .todo-page .todo-detail .check-it-out {
+    display: flex;
+    width: 79%;
+    justify-content: space-between;
+    text-decoration: none;
+    color: white; }
+    .todo-page .todo-detail .check-it-out a {
+      text-decoration: none;
+      color: white;
+      width: 16%;
+      display: flex;
+      justify-content: space-around;
+      border: 1px solid white;
+      font-family: Raleway; }
+      .todo-page .todo-detail .check-it-out a p {
+        font-family: Raleway; }
+      .todo-page .todo-detail .check-it-out a img {
+        align-self: center;
+        height: 46px;
+        width: 39px; }
+
+.todo-page aside {
+  height: 87%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .todo-page aside img {
+    display: inline-flex !important;
+    height: 40px;
+    width: 40px; }
+
+.must-page .work-image {
+  background-image: linear-gradient(rgba(145, 168, 164, 0.7), rgba(145, 168, 164, 0.7)), url("../../images/miami.jpg");
+  /* background-size: 123%; */
+  background-repeat: no-repeat;
+  /* background-position-x: 42%; */
+  background-size: 100%; }
+  .must-page .work-image .project-box {
+    display: none; }
+
+.must-page .must-detail {
+  width: 89%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-family: Raleway;
+  color: #D03F3F; }
+  .must-page .must-detail h1 {
+    font-size: 95px;
+    margin-left: 5%;
+    margin-top: 6%; }
+  .must-page .must-detail p {
+    width: 50%;
+    font-size: 17px;
+    text-align: center;
+    letter-spacing: 0px;
+    font-family: Raleway;
+    font-family: Oxygen; }
+  .must-page .must-detail .check-it-out {
+    margin-left: 6%;
+    margin-top: 12%;
+    display: flex;
+    width: 79%;
+    justify-content: space-between;
+    text-decoration: none; }
+    .must-page .must-detail .check-it-out a {
+      text-decoration: none;
+      color: white;
+      width: 16%;
+      display: flex;
+      justify-content: space-around;
+      border: 2px solid white;
+      font-family: Raleway;
+      border-radius: 4%; }
+      .must-page .must-detail .check-it-out a p {
+        font-family: Raleway; }
+      .must-page .must-detail .check-it-out a img {
+        align-self: center;
+        height: 46px;
+        width: 39px; }
+
+.must-page aside {
+  height: 87%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .must-page aside p {
+    display: inline-flex !important;
+    transform: rotate(-90deg);
+    font-family: 'Raleway', sans-serif;
+    font-size: 21px;
+    letter-spacing: 3px;
+    font-weight: 100; }
+
+.jeo-page .work-image {
+  background-image: linear-gradient(rgba(196, 215, 242, 0.7), rgba(196, 215, 242, 0.7)), url("../../images/bird.jpg");
+  background-size: cover; }
+  .jeo-page .work-image .project-box {
+    display: none; }
+
+.jeo-page .jeo-detail {
+  width: 89%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-family: Raleway;
+  color: #2B3031; }
+  .jeo-page .jeo-detail h1 {
+    font-size: 95px;
+    margin-left: 5%;
+    margin-top: 6%; }
+  .jeo-page .jeo-detail p {
+    width: 50%;
+    font-size: 17px;
+    text-align: center;
+    letter-spacing: 0px;
+    font-family: Raleway;
+    font-family: Oxygen; }
+  .jeo-page .jeo-detail .check-it-out {
+    margin-left: 6%;
+    margin-top: 12%;
+    display: flex;
+    width: 79%;
+    justify-content: space-between;
+    text-decoration: none; }
+    .jeo-page .jeo-detail .check-it-out a {
+      text-decoration: none;
+      color: white;
+      width: 16%;
+      display: flex;
+      justify-content: space-around;
+      border: 2px solid white;
+      font-family: Raleway;
+      border-radius: 4%; }
+      .jeo-page .jeo-detail .check-it-out a p {
+        font-family: Raleway; }
+      .jeo-page .jeo-detail .check-it-out a img {
+        align-self: center;
+        height: 46px;
+        width: 39px; }
+
+.jeo-page aside {
+  height: 87%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .jeo-page aside p {
+    display: inline-flex !important;
+    transform: rotate(-90deg);
+    font-family: 'Raleway', sans-serif;
+    font-size: 21px;
+    letter-spacing: 3px;
+    font-weight: 100; }
+
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
   .home-wrapper {
     height: 100%; }
@@ -695,216 +1000,76 @@ body .center {
     .footer .telephone-footer {
       display: flex; } }
 
-.surf-page .work-image {
-  background-color: yellow; }
-  .surf-page .work-image .project-box {
-    display: none; }
-
-.surf-page aside {
-  height: 87%;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .surf-page aside img {
-    display: inline-flex !important;
-    height: 40px;
-    width: 40px; }
-
-.event-page .work-image {
-  background-image: linear-gradient(rgba(11, 6, 100, 0.7), rgba(11, 6, 6, 0.7)), url("../../images/churchview.jpg");
-  background-size: cover; }
-  .event-page .work-image .project-box {
-    display: none; }
-
-.event-page .event-detail {
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  font-family: Raleway;
-  color: white; }
-  .event-page .event-detail h1 {
-    font-size: 95px; }
-  .event-page .event-detail p {
-    font-family: Pacifico; }
-  .event-page .event-detail .check-it-out {
+@media (min-width: 0px) and (max-width: 840px) {
+  .work-container {
+    background-color: white;
     display: flex;
-    width: 79%;
-    justify-content: space-between;
-    text-decoration: none;
-    color: white; }
-    .event-page .event-detail .check-it-out a {
-      text-decoration: none;
-      color: white;
-      width: 16%;
+    justify-content: center;
+    align-items: center;
+    resize: both;
+    overflow: auto;
+    width: 100%;
+    height: 735px;
+    margin-top: -2%; }
+    .work-container aside {
+      height: 87%; }
+      .work-container aside p {
+        display: none; }
+  .work-wrapper {
+    width: 96%;
+    resize: both;
+    overflow: auto;
+    height: 94%;
+    overflow: hidden; }
+    .work-wrapper nav {
       display: flex;
-      justify-content: space-around;
-      border: 1px solid white;
-      font-family: Raleway; }
-      .event-page .event-detail .check-it-out a p {
-        font-family: Raleway; }
-      .event-page .event-detail .check-it-out a img {
-        align-self: center;
-        height: 46px;
-        width: 39px; }
-
-.event-page aside {
-  height: 87%;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .event-page aside img {
-    display: inline-flex !important;
-    height: 40px;
-    width: 40px; }
-
-.todo-page .work-image {
-  background-image: linear-gradient(rgba(11, 6, 100, 0.7), rgba(11, 6, 6, 0.7)), url("../../images/tennis.jpg");
-  background-size: cover; }
-  .todo-page .work-image .project-box {
-    display: none; }
-
-.todo-page .todo-detail {
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  font-family: Raleway;
-  color: white; }
-  .todo-page .todo-detail h1 {
-    font-size: 95px; }
-  .todo-page .todo-detail p {
-    font-family: Pacifico; }
-  .todo-page .todo-detail .check-it-out {
+      justify-content: space-between;
+      margin-top: 1%;
+      margin-left: 4%; }
+      .work-wrapper nav .logo {
+        align-self: center; }
+        .work-wrapper nav .logo img {
+          height: 49px;
+          width: 75px; }
+  .work-image {
+    margin-left: -4%;
+    height: 86%;
+    width: 100%;
     display: flex;
-    width: 79%;
-    justify-content: space-between;
-    text-decoration: none;
-    color: white; }
-    .todo-page .todo-detail .check-it-out a {
-      text-decoration: none;
-      color: white;
-      width: 16%;
+    flex-flow: column; }
+    .work-image .event-detail {
+      display: none; }
+    .work-image .jeo-detail {
+      display: none; }
+    .work-image .todo-detail {
+      display: none; }
+    .work-image .must-detail {
+      display: none; }
+    .work-image .surf-detail {
+      display: none; }
+    .work-image .project-box {
+      background-color: white;
+      width: 100%;
+      height: 108px;
       display: flex;
-      justify-content: space-around;
-      border: 1px solid white;
-      font-family: Raleway; }
-      .todo-page .todo-detail .check-it-out a p {
-        font-family: Raleway; }
-      .todo-page .todo-detail .check-it-out a img {
-        align-self: center;
-        height: 46px;
-        width: 39px; }
-
-.todo-page aside {
-  height: 87%;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .todo-page aside img {
-    display: inline-flex !important;
-    height: 40px;
-    width: 40px; }
-
-.must-page .work-image {
-  background-image: linear-gradient(rgba(11, 6, 100, 0.7), rgba(11, 6, 6, 0.7)), url("../../images/miami.jpg");
-  background-size: cover; }
-  .must-page .work-image .project-box {
-    display: none; }
-
-.must-page .must-detail {
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  font-family: Raleway;
-  color: white; }
-  .must-page .must-detail h1 {
-    font-size: 95px; }
-  .must-page .must-detail p {
-    font-family: Pacifico; }
-  .must-page .must-detail .check-it-out {
-    display: flex;
-    width: 79%;
-    justify-content: space-between;
-    text-decoration: none;
-    color: white; }
-    .must-page .must-detail .check-it-out a {
-      text-decoration: none;
-      color: white;
-      width: 16%;
-      display: flex;
-      justify-content: space-around;
-      border: 1px solid white;
-      font-family: Raleway; }
-      .must-page .must-detail .check-it-out a p {
-        font-family: Raleway; }
-      .must-page .must-detail .check-it-out a img {
-        align-self: center;
-        height: 46px;
-        width: 39px; }
-
-.must-page aside {
-  height: 87%;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .must-page aside img {
-    display: inline-flex !important;
-    height: 40px;
-    width: 40px; }
-
-.jeo-page .work-image {
-  background-image: linear-gradient(rgba(11, 6, 100, 0.7), rgba(11, 6, 6, 0.7)), url("../../images/bird.jpg");
-  background-size: cover; }
-  .jeo-page .work-image .project-box {
-    display: none; }
-
-.jeo-page .jeo-detail {
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  font-family: Raleway;
-  color: white; }
-  .jeo-page .jeo-detail h1 {
-    font-size: 95px; }
-  .jeo-page .jeo-detail p {
-    font-family: Pacifico; }
-  .jeo-page .jeo-detail .check-it-out {
-    display: flex;
-    width: 79%;
-    justify-content: space-between;
-    text-decoration: none;
-    color: white; }
-    .jeo-page .jeo-detail .check-it-out a {
-      text-decoration: none;
-      color: white;
-      width: 16%;
-      display: flex;
-      justify-content: space-around;
-      border: 1px solid white;
-      font-family: Raleway; }
-      .jeo-page .jeo-detail .check-it-out a p {
-        font-family: Raleway; }
-      .jeo-page .jeo-detail .check-it-out a img {
-        align-self: center;
-        height: 46px;
-        width: 39px; }
-
-.jeo-page aside {
-  height: 87%;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .jeo-page aside img {
-    display: inline-flex !important;
-    height: 40px;
-    width: 40px; }
+      justify-content: center;
+      align-items: center; }
+    .work-image .event {
+      width: 100% !important; }
+    .work-image .maid {
+      width: 100% !important; }
+  .must-hover {
+    opacity: 1 !important;
+    -webkit-transition: all 200ms ease-in !important; }
+  .surf-hover {
+    opacity: 1 !important;
+    -webkit-transition: all 200ms ease-in !important; }
+  .todo-hover {
+    opacity: 1 !important;
+    -webkit-transition: all 200ms ease-in !important; }
+  .jeo-hover {
+    opacity: 1 !important;
+    -webkit-transition: all 200ms ease-in !important; } }
 
 body {
   background-color: white;

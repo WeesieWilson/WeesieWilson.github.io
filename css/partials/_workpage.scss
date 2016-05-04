@@ -10,7 +10,7 @@
   margin-top: -2%;
   aside{
         height: 87%;
-        img{
+        p{
           display: none;
         }
   }
@@ -55,6 +55,9 @@ overflow: hidden;
   .must-detail{
     display: none;
   }
+  .surf-detail{
+    display: none;
+  }
   .project-box{
     background-color: white;
     width: 31%;
@@ -65,19 +68,16 @@ overflow: hidden;
 
   }
   .maid{
-    background-image: linear-gradient(rgba(240, 247, 238,1),rgba(240, 247, 238,1)), url("../../images/kom-bottom-left.jpeg");
+background-image: linear-gradient(rgba(240, 247, 238,1),rgba(240, 247, 238,1)), url("../../images/kom-bottom-left.jpeg");
 background-size: cover;
-width: 33% !important;
+width: 34% !important;
+font-family: 'Fjalla One', sans-serif;
 font-size: 36px;
 font-weight: 800;
-color: rgb(143, 82, 223);
-font-family: 'Short Stack', cursive;
-text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
-p{
+color: #6C2B9C;
+      p{
       margin-left: 12%;
-}
-
-
+    }
   }
 
   .jeo{
@@ -85,51 +85,44 @@ p{
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: 100%;
-p{
-      margin-left: 12%;
-}
-
-
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+    color: #2B3031;
   }
 
 
 
   .todo{
     background-image: linear-gradient(rgba(175, 222, 220,1),rgba(175, 222, 220,1)), url("../../images/todo-bottom-right.jpeg");
-background-size: cover;
-background-repeat: no-repeat;
-
-font-size: 71px;
-font-weight: 800;
-color: #E5D6D6;
-font-family: "Raleway", sans-serif;
-
-
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #E8B8B8;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 36px;
+    font-weight: 800;
   }
 
   .must{
     background-image: linear-gradient(rgba(145, 168, 164,1),rgba(145, 168, 164,1)), url("../../images/must-bottom-middle.jpeg");
-font-family: 'Droid Sans', sans-serif;
-color: red;
-// text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-family: 'Fjalla One', sans-serif;
+    color: #D03F3F;
     font-size: 50px;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 36px;
+    font-weight: 800;
   }
   .event{
-    width: 33% !important;
+    width: 34% !important;
     background-image: linear-gradient(rgba(119, 104, 113,1),rgba(119, 104, 113,1)), url("../../images/event-top-left.jpg");
     background-size: cover;
-
-
-
-font-size: 36px;
-font-weight: 800;
-color: #CEFF6D;
-font-family: 'Fjalla One', sans-serif;
-p{
-
-margin-left: 11%;
-}
-
+    font-size: 36px;
+    font-weight: 800;
+    color: #CEFF6D;
+    font-family: 'Fjalla One', sans-serif;
+        p{
+        margin-left: 11%;
+        }
   }
 
   .must-hover{
@@ -145,19 +138,12 @@ margin-left: 11%;
 
   }
   .surf{
+    font-family: 'Fjalla One', sans-serif;
     background-image: linear-gradient(rgba(0, 53, 89,1),rgba(0, 53, 89,1)), url("../../images/surf-top-right.jpeg");
     background-size: cover;
-position: relative;
-font-size: 36px;
-font-weight: 800;
-color: #FF9600;
-font-family: 'Rock Salt', cursive;
-display: flex;
-flex-flow: column;
-justify-content: center;
-align-content: center;
-
-
+    font-size: 36px;
+    font-weight: 800;
+    color: #FF9600;
   }
 
 

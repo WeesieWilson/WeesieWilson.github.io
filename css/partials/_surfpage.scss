@@ -1,9 +1,65 @@
 .surf-page{
 .work-image{
-  background-color: yellow;
+  background-image: linear-gradient(rgba(0, 53, 89, 0.8), rgba(0, 53, 89, 0.8)), url("../../images/surf.jpg");
+  background-size: 123%;
+  background-repeat: no-repeat;
+  background-position-x: 42%;
   .project-box{
     display: none;
   }
+}
+.surf-detail{
+  width: 89%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column;
+justify-content: center;
+align-items: center;
+width: 100%;
+font-family: Raleway;
+color: #FF9600;
+h1{
+      font-size: 95px;
+      margin-left: 5%;
+margin-top: 6%;
+}
+p{
+width: 50%;
+  font-size: 17px;
+text-align: center;
+
+  letter-spacing: 0px;
+  font-family: Raleway;
+  font-family: Oxygen;
+}
+.check-it-out{
+      margin-left: 6%;
+      margin-top: 12%;
+  display: flex;
+width: 79%;
+justify-content: space-between;
+text-decoration: none;
+// color: white;
+
+a{
+  text-decoration: none;
+  color: white;
+  width: 16%;
+  display: flex;
+  justify-content: space-around;
+  border: 2px solid white;
+  font-family: Raleway;
+  border-radius: 4%;
+  p{
+    font-family: Raleway;
+  }
+  img{
+    align-self: center;
+    height: 46px;
+width: 39px;
+  }
+}
+}
 }
   aside{
 
@@ -11,10 +67,14 @@
         display: flex;
         justify-content: center;
 align-items: center;
-        img{
+        p{
           display: inline-flex !important;
-          height: 40px;
-          width: 40px;
+
+          transform: rotate(-90deg);
+          font-family: 'Raleway', sans-serif;
+          font-size: 21px;
+      letter-spacing: 3px;
+      font-weight: 100;
 
         }
   }

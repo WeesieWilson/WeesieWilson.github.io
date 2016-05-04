@@ -1,0 +1,109 @@
+@media (min-width: 0px ) and (max-width: 840px){
+  .work-container{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    resize: both;
+    overflow: auto;
+    width: 100%;
+    height: 735px;
+    margin-top: -2%;
+    aside{
+          height: 87%;
+          p{
+            display: none;
+          }
+    }
+  }
+  .work-wrapper{
+    width: 96%;
+  resize: both;
+  overflow: auto;
+  height: 94%;
+  overflow: hidden;
+    nav{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1%;
+            margin-left: 4%;
+            .logo{
+                align-self: center;
+                img{
+                  height: 49px;
+      width: 75px;
+                }
+              }
+      }
+  }
+
+  .work-image{
+        margin-left: -4%;
+    height: 86%;
+    width: 100%;
+    display: flex;
+
+    flex-flow: column;
+    .event-detail{
+      display: none;
+    }
+    .jeo-detail{
+      display: none;
+    }
+    .todo-detail{
+      display: none;
+    }
+    .must-detail{
+      display: none;
+    }
+    .surf-detail{
+      display: none;
+    }
+    .project-box{
+      background-color: white;
+      width: 100%;
+            height: 108px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .event{
+    width: 100% !important;
+  }
+  .maid{
+    width: 100% !important;
+  }
+}
+.must-hover{
+
+
+  opacity: 1 !important;
+  -webkit-transition: all 200ms ease-in !important;
+}
+.surf-hover{
+
+
+  opacity: 1 !important;
+  -webkit-transition: all 200ms ease-in !important;
+}
+.todo-hover{
+
+
+  opacity: 1 !important;
+  -webkit-transition: all 200ms ease-in !important;
+}
+.jeo-hover{
+
+
+  opacity: 1 !important;
+  -webkit-transition: all 200ms ease-in !important;
+}
+
+
+
+
+
+
+
+}
