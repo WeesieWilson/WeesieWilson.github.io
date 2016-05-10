@@ -370,6 +370,8 @@ body .center {
     display: none; }
   .work-image .jeo-detail {
     display: none; }
+  .work-image .maid-detail {
+    display: none; }
   .work-image .todo-detail {
     display: none; }
   .work-image .must-detail {
@@ -954,6 +956,70 @@ body .center {
   justify-content: center;
   align-items: center; }
   .jeo-page aside p {
+    display: inline-flex !important;
+    transform: rotate(-90deg);
+    font-family: 'Raleway', sans-serif;
+    font-size: 21px;
+    letter-spacing: 3px;
+    font-weight: 100; }
+
+.maid-page .work-image {
+  background-image: linear-gradient(rgba(240, 247, 238, 0.8), rgba(240, 247, 238, 0.8)), url("../../images/bottles.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .maid-page .work-image .project-box {
+    display: none; }
+
+.maid-page .maid-detail {
+  width: 89%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-family: Raleway;
+  color: #6C2B9C; }
+  .maid-page .maid-detail h1 {
+    font-size: 95px;
+    margin-left: 5%;
+    margin-top: 6%; }
+  .maid-page .maid-detail p {
+    width: 50%;
+    font-size: 17px;
+    text-align: center;
+    letter-spacing: 0px;
+    font-family: Raleway;
+    font-family: Oxygen; }
+  .maid-page .maid-detail .check-it-out {
+    margin-left: 6%;
+    margin-top: 12%;
+    display: flex;
+    width: 79%;
+    justify-content: space-between;
+    text-decoration: none; }
+    .maid-page .maid-detail .check-it-out a {
+      text-decoration: none;
+      color: white;
+      width: 16%;
+      display: flex;
+      justify-content: space-around;
+      border: 2px solid white;
+      font-family: Raleway;
+      border-radius: 4%; }
+      .maid-page .maid-detail .check-it-out a p {
+        font-family: Raleway; }
+      .maid-page .maid-detail .check-it-out a img {
+        align-self: center;
+        height: 46px;
+        width: 39px; }
+
+.maid-page aside {
+  height: 87%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .maid-page aside p {
     display: inline-flex !important;
     transform: rotate(-90deg);
     font-family: 'Raleway', sans-serif;

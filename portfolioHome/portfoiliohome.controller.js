@@ -51,9 +51,15 @@ angular
   $('.jeo').click(function(){
     $(".jeo").parent().closest('.work-wrapper').addClass("jeo-page");
   });
+  $('.maid').click(function(){
+    $(".maid").parent().closest('.work-wrapper').addClass("maid-page");
+  });
 
   $('.projects-aside').click(function(){
     $(".projects-aside").parent().parent().removeClass("surf-page");
+  });
+  $('.projects-aside').click(function(){
+    $(".projects-aside").parent().parent().removeClass("maid-page");
   });
   $('.projects-aside').click(function(){
     $(".projects-aside").parent().parent().removeClass("event-page");
