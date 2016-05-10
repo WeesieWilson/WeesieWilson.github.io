@@ -27,16 +27,16 @@
           img{
             height: 49px;
             width: 75px;
-            -webkit-animation: drop 2500ms ease-out;
+            // -webkit-animation: drop 2500ms ease-out;
           }
         }
     }
 }
-@-webkit-keyframes drop{
-0% {    -webkit-transform:translateX(5000%); }
-
-100% {    -webkit-transform:translateX(0%); }
-}
+// @-webkit-keyframes drop{
+// 0% {    -webkit-transform:translateX(5000%); }
+//
+// 100% {    -webkit-transform:translateX(0%); }
+// }
 .social-container{
   display: flex;
   justify-content: space-around;
@@ -86,15 +86,15 @@
     border-radius: 51%;
     height: 25px;
     width: 25px;
-    border: 3px solid #D87777;
-    background-image: url("../../images/black.png");
+    border: 3px solid #77858F;
+    background-image: url("../../images/insta.png");
     background-size: 61%;
     background-repeat: no-repeat;
     background-position: 48%;
     &:hover{
       border: 3px solid white;
-      background-color: #D87777;
-      background-image: url("../../images/black-white.png");
+      background-color: #77858F;
+      background-image: url("../../images/instawhite.png");
       background-size: 61%;
       background-repeat: no-repeat;
       background-position: 48%;

@@ -34,6 +34,16 @@ overflow: hidden;
               }
             }
     }
+    .email-footer{
+      display: flex;
+    justify-content: center;
+    height: 50px;
+      img{
+        height: 21px;
+    align-self: center;
+    // -webkit-animation: bounce 2200ms ease-out;
+      }
+    }
 }
 
 .work-image{

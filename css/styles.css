@@ -22,14 +22,7 @@
       align-self: center; }
       .home-wrapper nav .logo img {
         height: 49px;
-        width: 75px;
-        -webkit-animation: drop 2500ms ease-out; }
-
-@-webkit-keyframes drop {
-  0% {
-    -webkit-transform: translateX(5000%); }
-  100% {
-    -webkit-transform: translateX(0%); } }
+        width: 75px; }
 
 .social-container {
   display: flex;
@@ -76,15 +69,15 @@
     border-radius: 51%;
     height: 25px;
     width: 25px;
-    border: 3px solid #D87777;
-    background-image: url("../../images/black.png");
+    border: 3px solid #77858F;
+    background-image: url("../../images/insta.png");
     background-size: 61%;
     background-repeat: no-repeat;
     background-position: 48%; }
     .social-container .email:hover {
       border: 3px solid white;
-      background-color: #D87777;
-      background-image: url("../../images/black-white.png");
+      background-color: #77858F;
+      background-image: url("../../images/instawhite.png");
       background-size: 61%;
       background-repeat: no-repeat;
       background-position: 48%; }
@@ -358,6 +351,13 @@ body .center {
       .work-wrapper nav .logo img {
         height: 49px;
         width: 75px; }
+  .work-wrapper .email-footer {
+    display: flex;
+    justify-content: center;
+    height: 50px; }
+    .work-wrapper .email-footer img {
+      height: 21px;
+      align-self: center; }
 
 .work-image {
   height: 95%;
@@ -769,37 +769,49 @@ body .center {
     font-weight: 100; }
 
 .todo-page .work-image {
-  background-image: linear-gradient(rgba(11, 6, 100, 0.7), rgba(11, 6, 6, 0.7)), url("../../images/tennis.jpg");
-  background-size: cover; }
+  background-image: linear-gradient(rgba(175, 222, 220, 0.8), rgba(175, 222, 220, 0.8)), url("../../images/tennis.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
   .todo-page .work-image .project-box {
     display: none; }
 
 .todo-page .todo-detail {
+  width: 89%;
+  margin: 0 auto;
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
   width: 100%;
   font-family: Raleway;
-  color: white; }
+  color: #E8B8B8; }
   .todo-page .todo-detail h1 {
-    font-size: 95px; }
+    font-size: 95px;
+    margin-left: 5%;
+    margin-top: 6%; }
   .todo-page .todo-detail p {
-    font-family: Pacifico; }
+    width: 50%;
+    font-size: 17px;
+    text-align: center;
+    letter-spacing: 0px;
+    font-family: Raleway;
+    font-family: Oxygen; }
   .todo-page .todo-detail .check-it-out {
+    margin-left: 6%;
+    margin-top: 12%;
     display: flex;
     width: 79%;
     justify-content: space-between;
-    text-decoration: none;
-    color: white; }
+    text-decoration: none; }
     .todo-page .todo-detail .check-it-out a {
       text-decoration: none;
       color: white;
       width: 16%;
       display: flex;
       justify-content: space-around;
-      border: 1px solid white;
-      font-family: Raleway; }
+      border: 2px solid white;
+      font-family: Raleway;
+      border-radius: 4%; }
       .todo-page .todo-detail .check-it-out a p {
         font-family: Raleway; }
       .todo-page .todo-detail .check-it-out a img {
@@ -812,10 +824,13 @@ body .center {
   display: flex;
   justify-content: center;
   align-items: center; }
-  .todo-page aside img {
+  .todo-page aside p {
     display: inline-flex !important;
-    height: 40px;
-    width: 40px; }
+    transform: rotate(-90deg);
+    font-family: 'Raleway', sans-serif;
+    font-size: 21px;
+    letter-spacing: 3px;
+    font-weight: 100; }
 
 .must-page .work-image {
   background-image: linear-gradient(rgba(145, 168, 164, 0.7), rgba(145, 168, 164, 0.7)), url("../../images/miami.jpg");
@@ -1073,5 +1088,4 @@ body .center {
 
 body {
   background-color: white;
-  font-family: 'Oxygen', sans-serif;
-  cursor: url("../../images/arrow.png"), auto; }
+  font-family: 'Oxygen', sans-serif; }
